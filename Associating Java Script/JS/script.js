@@ -1,3 +1,2 @@
-/**
- * Created by NicaDevelopment on 5/9/15.
- */
+alert("This is in my js file ");
+
