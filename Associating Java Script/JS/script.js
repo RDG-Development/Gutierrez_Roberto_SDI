@@ -1,2 +1,3 @@
 // JavaScript
-var age; 
+var age;
+age = 24;
