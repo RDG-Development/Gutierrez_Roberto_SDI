@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e651d914-f0a7-4169-a45f-467ef37938fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Associating Java Script/index.html" afterPath="$PROJECT_DIR$/Associating Java Script/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Associating Java Script/JS/script.js" afterPath="$PROJECT_DIR$/Associating Java Script/JS/script.js" />
     </list>
     <ignored path="Gutierrez_Roberto_SDI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +36,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Associating Java Script/JS/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.040927693">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.18417463">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -73,9 +73,9 @@
         <option value="$PROJECT_DIR$/Go To Training Week 1/Week 1 .JS.js" />
         <option value="$PROJECT_DIR$/Go To Training Week 1/Week 1.html" />
         <option value="$PROJECT_DIR$/Go To Training Week 1/JS/Week1.js" />
-        <option value="$PROJECT_DIR$/Associating Java Script/JS/script.js" />
         <option value="$PROJECT_DIR$/Associating Java Script/CSS/styles.css" />
         <option value="$PROJECT_DIR$/Associating Java Script/index.html" />
+        <option value="$PROJECT_DIR$/Associating Java Script/JS/script.js" />
       </list>
     </option>
   </component>
@@ -313,8 +313,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Associating Java Script/JS/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.040927693">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.18417463">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
