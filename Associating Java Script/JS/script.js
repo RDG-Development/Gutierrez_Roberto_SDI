@@ -7,3 +7,5 @@ var isStudent = false; //Boolean Variable
 
 
 var firstName = "Kermit"; //String Variable
+
+var phrase = 'I don\'t know';
