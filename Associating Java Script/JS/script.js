@@ -1,8 +1,8 @@
-// Arrays
+// Chapter 2_examp3.html
+<//!DOCTYPE html PUBLIC >
+var firstNumber = 15;
+var secondNumber = 10;
+var answer;
+answer = 15 / 10;
 
-var muppetNames = ["Kermit", "Miss Piggy", "Gonzo", "Rizzo"]; //0,1,2,3
-
-muppetNames[1] = "Rizzo";
-
-var num = 0
-console.log(muppetNames[num]);
+alert(answer)
