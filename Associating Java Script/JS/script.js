@@ -1,29 +1,21 @@
-// Casting
+//Expression - Assignment Operators
 
-var stringVar = "6";
+var a = 3;
 
-var result = 7 + Number(stringVar);
+a += 4; //a = a + 4
 
-console.log(result);
+console.log(a);
 
-//Typing Number in front of stringVar causes a
-//temporary change of stringVar into a number
-//This is called CASTING.
+var b = 2;
 
-var areaCode = 407;
-var firstPart = 203;
-var secPart = 4529;
+b ++ ; // b = b + 1 // or b += 1
 
-var phoneNo = areaCode + firstPart + secPart;
-console.log(phoneNo);
+b -- ; // b = b - 1 // or b -= 1
 
-var phoneNumber = "(" + String(areaCode) + ")" + String(firstPart) + "-" + String(secPart);
-
-console.log(phoneNumber);
+console.log(b);
 
 
-//Written in the first method, it adds them ass
-//numbers, but when CAST as Strings, it adds them as
-//they are, or aka strings.
 
- 
+
+
+
