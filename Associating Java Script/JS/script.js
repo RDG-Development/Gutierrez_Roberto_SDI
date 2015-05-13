@@ -1,5 +1,1 @@
-//Expressions - Modulo Operator
-
-var remainder = 32 % 10;
-console.log(remainder);
-//The remainder = 2
+//Expression - PEMDAS - The Order of Operations
