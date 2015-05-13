@@ -1,24 +1,29 @@
-// Expressions - Concatenating or Combining Strings
+// Casting
 
-var firsName = "Roberto";
+var stringVar = "6";
 
-var lastName = "Gutierrez";
+var result = 7 + Number(stringVar);
 
-var fullName = firsName + " " + lastName;
-
-console.log(fullName);
-
-
-
-var a = "6";
-
-var b = "7";
-
-var result = a + b;
 console.log(result);
 
-// gives 67 instead of 13, this is because
-//a String only holds the characters 6 & 7
-//it is not the same as adding the numbers 6 &
-//7. Strings and Numbers are Not the same
+//Typing Number in front of stringVar causes a
+//temporary change of stringVar into a number
+//This is called CASTING.
 
+var areaCode = 407;
+var firstPart = 203;
+var secPart = 4529;
+
+var phoneNo = areaCode + firstPart + secPart;
+console.log(phoneNo);
+
+var phoneNumber = "(" + String(areaCode) + ")" + String(firstPart) + "-" + String(secPart);
+
+console.log(phoneNumber);
+
+
+//Written in the first method, it adds them ass
+//numbers, but when CAST as Strings, it adds them as
+//they are, or aka strings.
+
+ 
