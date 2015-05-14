@@ -76,7 +76,9 @@ Damage = (userChose[0] * spell[0]) + (userChose[1] * spell[1]) + (userChose[2] *
 console.log(userChose);
 
 //alert the user of their choices.
-alert("Your " + describeSpell + " has " + effectsOfSpell + " your enemy leaving the warriors unrecognizable remains on the charred battlefield. Pity any other fool that dares challenge you! You have caused " + Damage + " damage! You retreat to a safer area so that your energy can replenish, and so you can return to the glorious battlefield.");
+alert("Your " + describeSpell + " has " + effectsOfSpell + " your enemy leaving the warriors\' unrecognizable remains on the charred battlefield. Pity any other fool that dares challenge you! You have caused " + Damage + " damage! You retreat to a safer area so that your energy can replenish, and so you can return to the glorious battlefield.");
+
+console.log(alert)
 
 
 
