@@ -28,6 +28,7 @@ var userChose =[Number(prompt("Will you choose a FireBolt spell? Type 1 for yes 
 //Give a prompt to let the user describe the spell
 var describeSpell = prompt("What spell did you choose? A FireBolt, a IceBolt, or a DeathBolt?")
 
+//Give a prompt to let the user describe the effects of the spell
 var effectsOfSpell = prompt("Type the phrase that best fits your spell, (Swallowed and Vaporized),(Frozen and Shattered), (Poisoned and Rotted))")
 
 
