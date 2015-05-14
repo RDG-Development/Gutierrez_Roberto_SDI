@@ -76,10 +76,20 @@ Damage = (userChose[0] * spell[0]) + (userChose[1] * spell[1]) + (userChose[2] *
 console.log(userChose);
 
 //alert the user of their choices.
-alert("Your " + describeSpell + " has " + effectsOfSpell + " your enemy leaving the warriors\' unrecognizable remains on the charred battlefield. Pity any other fool that dares challenge you! You have caused " + Damage + " damage! You retreat to a safer area so that your energy can replenish, and so you can return to the glorious battlefield.");
+alert("Your " + describeSpell + " has " + effectsOfSpell + " your enemy, leaving the warriors\' unrecognizable remains on the charred battlefield. Pity any other fool that dares challenge you! You have caused " + Damage + " damage! You retreat to a safer area so that your energy can replenish, and so you can return to the glorious battlefield.");
 
-console.log(alert)
-
+/*
+For my Test, I used a DeathBolt Spell.
+I entered 0,0,1 when prompted.
+I then entered DeathBolt as my spell choice.
+I then entered Poisoned and Rotted
+Giving me the phrase"Your
+DeathBolt has Poisoned and Rotted your
+enemy, leaving the warriors' unrecognizable
+remains on the charred battlefield. Pity any other
+fool that dares challenge you! You have caused 160 damage!
+ You retreat to a safer area so that your energy can replenish, and so you can return to the glorious battlefield.
+ */
 
 
 
