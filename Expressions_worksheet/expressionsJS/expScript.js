@@ -106,7 +106,7 @@ The total is $488 in a 5 week period, and the average is $97.6.
  */
 
 
-//Calculate the discounted price of an item
+//Problem 5 Calculate the discounted price of an item
 
 //Create a prompt that asks the user to enter an itme they want discounted.
 var descriptionOfItem = prompt(" What kind of Item are you discounting? Please list the item itself and nothing more. Example: Chair or pair of shoes");
