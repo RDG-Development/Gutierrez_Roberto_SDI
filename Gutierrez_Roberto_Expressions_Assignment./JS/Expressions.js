@@ -4,4 +4,6 @@ Roberto Gutierrez
 SDI Section 01
 Expressions Assignment
  */
+//alert("Are you ready?")
+
 
