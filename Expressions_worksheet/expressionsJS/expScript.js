@@ -150,3 +150,6 @@ The discount was 20%, and the sales tax was 7.25%. The 20% discount is $4050 off
 
 
 
+
+
+
