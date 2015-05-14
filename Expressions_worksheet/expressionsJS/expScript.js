@@ -82,7 +82,57 @@ per person and 2 slices for sparky which
 is the desired outcome.
  */
 
+//Problem 4
+/* Discover your average weekly grocery spending
+over the past 5 weeks
+ */
 
+//Create 5 prompts that ask the user how much they spent on groceries for 5 consecutive weeks.
+var fiveWeekGroceryTotals = [Number(prompt("How much did you spend on groceries your first week?")),Number(prompt("How much did you spend on groceries your second week?")),Number(prompt("How much did you spend on groceries your third week?")),Number(prompt("How much did you spend on groceries your fourth week?")),Number(prompt("How much did you spend on groceries your fifth week?"))];
+
+//Enter the number of weeks that your array spans over.
+var numberOfWeeks = 5;
+
+//Get the total amount of spending by adding up the five weeks through array notation.
+var totalAmountSpentOnGroceries = fiveWeekGroceryTotals[0] + fiveWeekGroceryTotals[1] + fiveWeekGroceryTotals[2] + fiveWeekGroceryTotals[3] + fiveWeekGroceryTotals[4];
+
+//alert the user of the total spent over 5 weeks and the average per week.
+alert("You have spent a total of $" + totalAmountSpentOnGroceries + " over 5 weeks. " + "Your average grocery spending per week is $" + (totalAmountSpentOnGroceries / numberOfWeeks) + " per week.");
+
+/* I used the array [95,100,107,84,102].
+I added these up to get the total amount spent and then
+divided that total by 5 in order to get the average spent.
+The total is $488 in a 5 week period, and the average is $97.6.
+ */
+
+
+//Calculate the discounted price of an item
+
+//Create a prompt that asks the user to enter an itme they want discounted.
+var descriptionOfItem = prompt(" What kind of Item are you discounting? Please list the item itself and nothing more. Example: Chair or pair of shoes");
+
+//Create a prompt that asks the user what the original price of that item is.
+var originalPrice = Number(prompt("What is the original price of your item? Example: For $1000 type only 1000"));
+
+//Create a prompt that asks the user what the percentage discount is.
+var discountPercentage = Number(prompt("What is the percentage discount on your item? Example: Type 20 if your discount is 20%.")) / 100;
+
+//Create a prompt that asks the user what the sales tax is.
+var salesTaxPercentage = Number(prompt("What is the sales tax in your area? Example: Type 7.25 if your discount is 7.25%.")) / 100;
+
+
+//Create a variable that calculates the price of the discounted item without tax.
+var priceOFTheItemWithoutTax = originalPrice - (originalPrice * discountPercentage);
+
+//Create a variable that calculates the price of the discounted item with tax.
+var priceOfTheItemWithTax = priceOFTheItemWithoutTax + (priceOFTheItemWithoutTax * salesTaxPercentage);
+
+
+alert("Your " + descriptionOfItem + " was originally $" + originalPrice + ", but after a " + discountPercentage + "% discount, it is now $" + priceOFTheItemWithoutTax + " without tax, and $" + priceOfTheItemWithTax + " with tax.");
+
+/* For my item I chose a car valued at $20,250.
+The discount was 20%, and the sales tax was 7.25%. The 20% discount is $4050 off my original price. The price of my car without tax is 16200. The tax adds $1174.50. The price of my car with tax is $17374.5
+ */
 
 
 
