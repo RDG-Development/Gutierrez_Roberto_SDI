@@ -17,7 +17,7 @@ alert("You have 3 spells at your disposal.");
 
 alert("Choose which spell or spells with which to destroy this fool who dares to charge you!");
 
-alert("Remember you can cast one of these spells or all three.")
+alert("Remember you can cast one of these spells or all three, but only one cast for each spell. You can choose between Fire, Ice, and Death.")
 
 
 
