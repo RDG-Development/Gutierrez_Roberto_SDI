@@ -86,7 +86,7 @@ console.log(spell[2] + " Total Death Bolt Damage")
 Damage = (userChose[0] * spell[0]) + (userChose[1] * spell[1]) + (userChose[2] * spell[2])
 
 //Test to see if it appears on console.
-console.log(userChose + " ....... Number of FireBolt Spell Cast, Number of IceBolt Spell Cast, Number of DeathBolt Spell Cast, Respectfully");
+console.log(userChose + " ....... (Number of FireBolt Spell Cast), (Number of IceBolt Spell Cast), (Number of DeathBolt Spell Cast), Respectfully");
 
 //alert the user of their choices.
 alert("Your " + describeSpell + " has " + effectsOfSpell + " your enemy, leaving the warriors\' unrecognizable remains on the charred battlefield. Pity the next fool that dares challenge you! You have caused " + Damage + " damage! You retreat to a safer area so that your energy can replenish, and so you can return to the glorious battlefield.");
