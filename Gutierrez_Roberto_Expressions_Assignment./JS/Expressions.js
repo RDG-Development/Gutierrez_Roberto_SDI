@@ -9,7 +9,7 @@ Expressions Assignment
 // Tested js and works
 
 //Created a narration to inform the user
-alert("You, are are a Battle-Mage in the middle of a war zone.");
+alert("You, are a Battle-Mage in the middle of a war zone.");
 
 alert("A fearsome warrior spots you and begins to charge, with a sword raised to strike you down.");
 
@@ -39,10 +39,13 @@ var spell = ["FireBolt, IceBolt, DeathBolt"];
 //Create a variable for the damage a firebolt does.
 var fireBoltImpactDamage = 100;
 
+//Create Damage of FirBolt per second for 3 seconds
 var fireBoltDamagePerSecondForThreeSeconds = 25 * 3;
 
+//Create Total Damage for FirBolt spell
 var fireBoltSpellTotalDamage = fireBoltImpactDamage + fireBoltDamagePerSecondForThreeSeconds;
 
+Assign Total damage to FireBolt
 spell[0] = fireBoltSpellTotalDamage;
 
 //Test if your value appears on the console.
@@ -51,10 +54,13 @@ console.log(spell[0]);
 //Create a variable for the damage an icebolt does.
 var iceBoltImpactDamage = 150;
 
+//Create Damage per second for IceBolt variable for 3 seconds
 var iceBoltDamagePerSecondForThreeSeconds = 5 * 3;
 
+//Create Total Damage for IceBolt by calculating
 var iceBoltSpellTotalDamage = iceBoltImpactDamage + iceBoltDamagePerSecondForThreeSeconds;
 
+//assign IceBolt to Total Damage of IceBolt
 spell[1] = iceBoltSpellTotalDamage
 
 //Test if your value appears on the console.
