@@ -45,7 +45,7 @@ var fireBoltDamagePerSecondForThreeSeconds = 25 * 3;
 //Create Total Damage for FirBolt spell
 var fireBoltSpellTotalDamage = fireBoltImpactDamage + fireBoltDamagePerSecondForThreeSeconds;
 
-Assign Total damage to FireBolt
+//Assign Total damage to FireBolt
 spell[0] = fireBoltSpellTotalDamage;
 
 //Test if your value appears on the console.
@@ -69,17 +69,23 @@ console.log(spell[1]);
 //Create a variable for the damage a deathbolt does.
 var deathBoltImpactDamage = 25;
 
+//Create DeathBolt Damage Per Second for 3 seconds
 var deathBoltDamagePerSecondForThreeSeconds = 45 * 3;
 
+//Create DeathBolt Total Damage Calculation
 var deathBoltSpellTotalDamage = deathBoltImpactDamage + deathBoltDamagePerSecondForThreeSeconds;
 
+//Assign DeathBolt from array to Total Damage
 spell[2] = deathBoltSpellTotalDamage
 
 //Test if your value appears on console.
 console.log(spell[2])
 
+//Calculate the total damage from the users input.
+
 Damage = (userChose[0] * spell[0]) + (userChose[1] * spell[1]) + (userChose[2] * spell[2])
 
+//Test to see if it appears on console.
 console.log(userChose);
 
 //alert the user of their choices.
