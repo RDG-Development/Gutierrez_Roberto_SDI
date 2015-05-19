@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e651d914-f0a7-4169-a45f-467ef37938fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training/JS/mytraining.js" afterPath="$PROJECT_DIR$/Training/JS/mytraining.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gutierrez_Roberto_Expressions_Assignment./JS/Expressions.js" afterPath="$PROJECT_DIR$/Gutierrez_Roberto_Expressions_Assignment./JS/Expressions.js" />
     </list>
     <ignored path="Gutierrez_Roberto_SDI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mytraining.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mytraining.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Training/JS/mytraining.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06772009">
-              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Expressions.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gutierrez_Roberto_Expressions_Assignment./JS/Expressions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3227991">
+              <caret line="102" column="10" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -63,11 +73,11 @@
         <option value="$PROJECT_DIR$/Expressions_worksheet/expressionsJS/expScript.js" />
         <option value="$PROJECT_DIR$/Gutierrez_Roberto_Expressions_Assignment./JS/Expression.js" />
         <option value="$PROJECT_DIR$/Gutierrez_Roberto_Expressions_Assignment./Expressions.html" />
-        <option value="$PROJECT_DIR$/Gutierrez_Roberto_Expressions_Assignment./JS/Expressions.js" />
         <option value="$PROJECT_DIR$/Go To Training Week 1/Week 1.html" />
         <option value="$PROJECT_DIR$/Go To Training Week 1/JS/Week1.js" />
         <option value="$PROJECT_DIR$/Training/mytraining.html" />
         <option value="$PROJECT_DIR$/Training/JS/mytraining.js" />
+        <option value="$PROJECT_DIR$/Gutierrez_Roberto_Expressions_Assignment./JS/Expressions.js" />
       </list>
     </option>
   </component>
@@ -442,18 +452,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gutierrez_Roberto_Expressions_Assignment./JS/Expressions.js">
+    <entry file="file://$PROJECT_DIR$/Training/JS/mytraining.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0876288">
-          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Training/JS/mytraining.js">
+    <entry file="file://$PROJECT_DIR$/Gutierrez_Roberto_Expressions_Assignment./JS/Expressions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06772009">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.3227991">
+          <caret line="102" column="10" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
           <folding />
         </state>
       </provider>

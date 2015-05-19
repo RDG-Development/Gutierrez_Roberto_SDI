@@ -23,13 +23,13 @@ alert("Remember you can cast one of these spells or all three, but only one cast
 
 
 //Create a prompt so that the user can choose which spell to cast
-var userChose =[Number(prompt("Will you choose a FireBolt spell? Type 1 for yes or 0 for no")), Number(prompt("Will you choose a Icebolt spell? Type 1 for yes or 0 for no")),Number(prompt("Will you choose a DeathBolt spell? Type 1 for yes or 0 for no"))]
+var userChose =[Number(prompt("Will you choose a FireBolt spell? Type 1 for yes or 0 for no")), Number(prompt("Will you choose a IceBolt spell? Type 1 for yes or 0 for no")),Number(prompt("Will you choose a DeathBolt spell? Type 1 for yes or 0 for no"))]
 
 //Give a prompt to let the user describe the spell
 var describeSpell = prompt("What spell did you choose? FireBolt, IceBolt, or DeathBolt? If you chose all three it would look like this. \'FireBolt, IceBolt, and DeathBolt\'")
 
 //Give a prompt to let the user describe the effects of the spell
-var effectsOfSpell = prompt("Type the phrase that best fits your spell, (Swallowed and Vaporized),(Frozen and Shattered), (Poisoned and Rotted). Type \'and\' between each phrase if you chose more than one. If you chose more than one type a comma between each phrase. Like this \'Swallowed and Vaporized,Frozen and Shattered, and Poisoned and Rotted\'.")
+var effectsOfSpell = prompt("Type the phrase that best fits your spell, (Swallowed and Vaporized),(Frozen and Shattered), (Poisoned and Rotted). Type \'and\' between each phrase if you chose more than one. If you chose more than one type, place a comma between each phrase. Like this \'Swallowed and Vaporized,Frozen and Shattered, and Poisoned and Rotted\'.")
 
 
 //Create an Array of your spells
