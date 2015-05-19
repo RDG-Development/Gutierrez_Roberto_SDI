@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e651d914-f0a7-4169-a45f-467ef37938fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gutierrez_Roberto_Expressions_Assignment./JS/Expressions.js" afterPath="$PROJECT_DIR$/Gutierrez_Roberto_Expressions_Assignment./JS/Expressions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training/JS/mytraining.js" afterPath="$PROJECT_DIR$/Training/JS/mytraining.js" />
     </list>
     <ignored path="Gutierrez_Roberto_SDI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,21 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mytraining.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mytraining.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Training/JS/mytraining.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Expressions.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gutierrez_Roberto_Expressions_Assignment./JS/Expressions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3227991">
-              <caret line="102" column="10" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.5756208">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -76,8 +66,8 @@
         <option value="$PROJECT_DIR$/Go To Training Week 1/Week 1.html" />
         <option value="$PROJECT_DIR$/Go To Training Week 1/JS/Week1.js" />
         <option value="$PROJECT_DIR$/Training/mytraining.html" />
-        <option value="$PROJECT_DIR$/Training/JS/mytraining.js" />
         <option value="$PROJECT_DIR$/Gutierrez_Roberto_Expressions_Assignment./JS/Expressions.js" />
+        <option value="$PROJECT_DIR$/Training/JS/mytraining.js" />
       </list>
     </option>
   </component>
@@ -124,38 +114,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Gutierrez_Roberto_SDI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gutierrez_Roberto_SDI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gutierrez_Roberto_SDI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Training" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gutierrez_Roberto_SDI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gutierrez_Roberto_SDI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Training" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -452,18 +410,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Training/JS/mytraining.js">
+    <entry file="file://$PROJECT_DIR$/Gutierrez_Roberto_Expressions_Assignment./JS/Expressions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7629797">
+          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gutierrez_Roberto_Expressions_Assignment./JS/Expressions.js">
+    <entry file="file://$PROJECT_DIR$/Training/JS/mytraining.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3227991">
-          <caret line="102" column="10" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.5756208">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding />
         </state>
       </provider>
