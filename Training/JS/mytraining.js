@@ -3,13 +3,11 @@
  */
 //alert("Testing Connection")
 
-var oldEnough = false;
+    alert("The following prompts will inform you if you are allowed to ride this roller coaster, or not.")
 
-//if the child is old enough, print to the console, "you can ride"
+var minHeightFeet = 4.5 ;
 
-if(oldEnough){
-    //code performed if condition is true
-    console.log("You can ride the coaster!");
-        }else{console.log("You cannot ride the coaster! Sorry Loser!")}
+var yourHeightInches = Number(prompt("What is your Height? Write your height as follows: Five foot, eleven inches would be written as (5.11)"));
 
-
+if(yourHeightInches >= minHeightFeet){alert( "You are allowed to ride this coaster.")
+    } else{alert("You are not allowed to ride this coaster.")}
