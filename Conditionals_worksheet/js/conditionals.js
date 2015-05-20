@@ -47,6 +47,10 @@ var convertToFahrenheit = (howManyDegrees / fiveNinths) + ThirtyTwo;
 
 console.log(convertToFahrenheit);
 
+if(fahrenheit){
+    alert("Your temperature in fahrenheit is " + convertToFahrenheit + "" + fahrenheit + ".")
+}
+
 
 
 
