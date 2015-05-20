@@ -48,8 +48,11 @@ var convertToFahrenheit = (howManyDegrees / fiveNinths) + ThirtyTwo;
 console.log(convertToFahrenheit);
 
 if(fahrenheit){
-    alert("Your temperature in fahrenheit is " + convertToFahrenheit + "" + fahrenheit + ".")
-}
+    alert("Your temperature in degrees fahrenheit is " + convertToFahrenheit + " " + fahrenheit + ".")
+
+}else if(celsius){
+    alert("Your temperature in degrees celsius is " + convertToCelsius + " " + celsius + ".")
+};
 
 
 
