@@ -17,17 +17,41 @@ alert("The following pop-up windows will assist you in converting temperature fr
 
 //Create a variable that prompts the user how many degrees they want to convert.
 
-var howManyDegrees = prompt("What is the temperature that you want to convert from? Example:Type the only the number ( 100 ) for 100 degrees fahrenheit or celsius");
+var howManyDegrees = parseInt(prompt("What is the temperature that you want to convert from? Example:Type the only the number ( 100 ) for 100 degrees fahrenheit or celsius"));
 
 console.log(howManyDegrees);
 
-//Create variables for fahrenheit and ceslsius
+//Create variables for fahrenheit and celsius
+
 var fahrenheit = "F";
 
 var celsius = "C";
 
 //Create a prompt that asks the user what they want to convert to.
 
-var converTo = prompt
+var convertTo = prompt("What do you want to convert your temperature to? Type " + fahrenheit + " for fahdrenheit, or " + celsius + " for celsius. Make sure to capitalize your response. ");
+
+console.log(convertTo);
+
+//Create variables that hold the conversion calculations.
+
+var ThirtyTwo = 32
+
+var fiveNinths = 5/9
+
+var convertToCelsius = (howManyDegrees - ThirtyTwo) * fiveNinths;
+
+console.log(convertToCelsius);
+
+var convertToFahrenheit = (howManyDegrees / fiveNinths) + ThirtyTwo;
+
+console.log(convertToFahrenheit);
+
+
+
+
+
+
+
 
 
