@@ -23,17 +23,11 @@ console.log(howManyDegrees);
 
 //Create variables for fahrenheit and celsius
 
-var lowerCaseF = "f";
-
-var lowerCaseC = "c";
-
 var fahrenheit = "F";
 
 var celsius = "C";
 
-lowerCaseF = fahrenheit
 
-lowerCaseC = celsius
 
 //Create a prompt that asks the user what they want to convert to.
 
@@ -55,12 +49,13 @@ var convertToFahrenheit = (howManyDegrees / fiveNinths) + ThirtyTwo;
 
 console.log(convertToFahrenheit);
 
-if(fahrenheit){
+if(fahrenheit == convertTo){
     alert("Your temperature in degrees fahrenheit is " + convertToFahrenheit + " " + fahrenheit + ".")
-
-}else if(celsius){
+}else if(celsius == convertTo){
     alert("Your temperature in degrees celsius is " + convertToCelsius + " " + celsius + ".")
-};
+}else{ alert("You have entered something invalid. Pleae refresh the page and try again.")};
+
+
 
 
 
