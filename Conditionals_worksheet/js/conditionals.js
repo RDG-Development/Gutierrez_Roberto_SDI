@@ -12,12 +12,12 @@ Conditionals_worksheet
 
 //Alert the user what the following will do.
 
-alert("The following pop-up windows will assist you in converting temperature from/to Fahrenheit or from/to Celsius depending on what you want to do.");
+alert("The following pop-up windows will assist you in converting temperature from/to Fahrenheit or from/to Celsius depending on what you want to do. Follow the instructions carefully.");
 
 
 //Create a variable that prompts the user how many degrees they want to convert.
 
-var howManyDegrees = parseInt(prompt("What is the temperature that you want to convert from? Type only the number, Example: Type ( 100 ) for 100 degrees fahrenheit/celsius"));
+var howManyDegrees = parseInt(prompt("What is the temperature that you want to convert from? Only type the number, Example: Type ( 100 ) for 100 degrees fahrenheit/celsius"));
 
 console.log(howManyDegrees);
 
@@ -28,10 +28,9 @@ var fahrenheit = "F";
 var celsius = "C";
 
 
-
 //Create a prompt that asks the user what they want to convert to.
 
-var convertTo = prompt("What do you want to convert your temperature to? Type " + fahrenheit + " for fahdrenheit, or " + celsius + " for celsius. Make sure to capitalize your response. ");
+var convertTo = prompt("What do you want to convert your temperature to? Type " + fahrenheit + " for fahrenheit, or " + celsius + " for celsius. Make sure to capitalize your response. ");
 
 console.log(convertTo);
 
@@ -48,6 +47,8 @@ console.log(convertToCelsius);
 var convertToFahrenheit = (howManyDegrees / fiveNinths) + ThirtyTwo;
 
 console.log(convertToFahrenheit);
+
+//Create your conditional if and else statement.
 
 if(fahrenheit == convertTo){
     alert("Your temperature in degrees fahrenheit is " + convertToFahrenheit + " " + fahrenheit + ".")
