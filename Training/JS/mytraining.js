@@ -11,4 +11,3 @@ var yourHeightInches = Number(prompt("What is your Height? Write your height as 
 
 if(yourHeightInches >= minHeightFeet){alert( "You are allowed to ride this coaster.")
     } else{alert("You are not allowed to ride this coaster.")}
- 
