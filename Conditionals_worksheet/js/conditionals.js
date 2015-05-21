@@ -15,12 +15,12 @@ Conditionals_worksheet
 
 //Alert the user what the following will do.
 
-/*________________alert("The following pop-up windows will assist you in converting temperature from/to Fahrenheit or from/to Celsius depending on what you want to do. Follow the instructions carefully.");
+alert("The following pop-up windows will assist you in converting temperature from/to Fahrenheit or from/to Celsius depending on what you want to do. Follow the instructions carefully.");
 
 
 //Create a variable that prompts the user how many degrees they want to convert.
 
-/*_______________var howManyDegrees = parseInt(prompt("What is the temperature that you want to convert from? Only type the number, Example: Type ( 100 ) for 100 degrees fahrenheit/celsius"));
+var howManyDegrees = parseInt(prompt("What is the temperature that you want to convert from? Only type the number, Example: Type ( 100 ) for 100 degrees fahrenheit/celsius"));
 
 console.log(howManyDegrees);
 
@@ -39,9 +39,9 @@ console.log(convertTo);
 
 //Create variables that hold the conversion calculations.
 
-var ThirtyTwo = 32
+var ThirtyTwo = 32;
 
-var fiveNinths = 5/9
+var fiveNinths = 5/9;
 //Make one variable that holds the celsius Conversion
 var convertToCelsius = (howManyDegrees - ThirtyTwo) * fiveNinths;
 
@@ -56,7 +56,7 @@ console.log(convertToFahrenheit);
 
 /*Within your conditionals add alerts that initiates if an outcome is true.
  */
-/*______________if(fahrenheit == convertTo){
+if(fahrenheit == convertTo){
     alert("Your temperature in degrees fahrenheit is " + convertToFahrenheit + " " + fahrenheit + ".")
 }else if(celsius == convertTo){
     alert("Your temperature in degrees celsius is " + convertToCelsius + " " + celsius + ".")
@@ -71,7 +71,7 @@ console.log(convertToFahrenheit);
  */
 
 //Create variables for the username and password that a user can create through prompts
-/*____________________var createUserName = prompt("Welcome. Please create a username.");
+var createUserName = prompt("Welcome. Please create a username.");
     console.log(createUserName);
 
 var createPassword = prompt("Thank you. Now create a password. ");
@@ -83,19 +83,24 @@ var loginWithUserName = prompt("To Login, enter your username.");
 var loginWithPassword = prompt("To Login, enter your password.");
     console.log(loginWithPassword);
 
+//Create conditionals for all scenarios that a user might enter.
 if((createUserName == loginWithUserName) && (createPassword == loginWithPassword)){
+    //console.log results, and alert the user
      console.log("Welcome, " + createUserName + "!")
         alert("Welcome, " + createUserName + "!")
 
 }else if((createUserName !== loginWithUserName) && (createPassword == loginWithPassword)){
+    //console.log results, and alert the user
     console.log("User not found. Please try again.")
         alert("User not found. Please try again.")
 
 }else if((createPassword !== loginWithPassword) && (createUserName == loginWithUserName)){
+    //console.log results, and alert the user
     console.log("Password does not match our records.")
         alert("Password does not match our records.")
 
 }else if((createUserName !== loginWithUserName) && (createPassword !== loginWithPassword)){
+    //console.log results, and alert the user
     console.log("User not found, and password does not match our records. Please try again.")
         alert("User not found, and password does not match our records. Please try again.")
 };
@@ -106,13 +111,16 @@ if((createUserName == loginWithUserName) && (createPassword == loginWithPassword
  To meet to maintenance standards a car’s front two tires should have the same pressure and the back two tires should have the same pressure.  But the front tires and the rear tires can have different pressure than each other, so it is not necessary for all four tires’ pressure to be the same. Create a single conditional that would determine if the tires of a given car are up to spec.
  */
 
+//Create an alert to greet and inform the reader.
 alert("Hi there, the following prompts will assist you in knowing if you have to adjust the tire pressures of your car. You will need to know the tire pressure for all four of your tires.")
 
+//Create an array that will hold all the prompts and record the users input.
 var tirePressure = [Number(prompt("What is your front left tire pressure? Please enter only a number value such as 32.")), Number(prompt("What is your front right tire pressure? Please enter only a number value such as 32.")), Number(prompt("What is your rear left tire pressure? Please enter only a number value such as 32.")), Number(prompt("What is your rear right tire pressure? Please enter only a number value such as 32."))]
 
+//Console.log those results to make sure they are recorded correctly.
 console.log(tirePressure);
 
-
+//Create a conditional or shorter ternary in order to tell the user if they pass the spec test, or if they need to get their tires checked.
 ((tirePressure[0] == tirePressure[1]) && (tirePressure[2] == tirePressure[3])) ? alert("Tires pass spec!") + (console.log("Tires pass spec!")) : alert("Get your tires checked out!") + (console.log("Get your tires checked out!"));
 
 
