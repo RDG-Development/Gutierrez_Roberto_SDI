@@ -72,12 +72,16 @@ console.log(convertToFahrenheit);
 
 //Create variables for the username and password that a user can create through prompts
 var createUserName = prompt("Welcome. Please create a username.");
+    console.log(createUserName);
 
 var createPassword = prompt("Thank you. Now create a password. ");
+    console.log(createPassword);
 
 var loginWithUserName = prompt("To Login, enter your username.");
+    console.log(loginWithUserName);
 
 var loginWithPassword = prompt("To Login, enter your password.");
+    console.log(loginWithPassword);
 
 if((createUserName == loginWithUserName) && (createPassword == loginWithPassword)){
      console.log("Welcome, " + createUserName + "!")
@@ -87,8 +91,8 @@ if((createUserName == loginWithUserName) && (createPassword == loginWithPassword
 
 }else if((createPassword !== loginWithPassword) && (createUserName == loginWithUserName)){
     console.log("Password does not match our records.")
-}else if((createUserName !== loginWithUserName)) && (createPassword !== loginWithPassword)){
 
+}else if((createUserName !== loginWithUserName) && (createPassword !== loginWithPassword)){
     console.log("User not found, and password does not match our records. Please try again.")
 };
 
