@@ -118,6 +118,7 @@ if((tirePressure[0] == tirePressure[1]) && (tirePressure[2] == tirePressure[3]))
     console.log("Get your tires checked out!")
 };
 
+((tirePressure[0] == tirePressure[1]) && (tirePressure[2] == tirePressure[3])) ? console.log("Tires pass spec!") : console.log("Get your tires checked out!");
 
 
 
