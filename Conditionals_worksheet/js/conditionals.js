@@ -112,13 +112,8 @@ var tirePressure = [Number(prompt("What is your front left tire pressure? Please
 
 console.log(tirePressure);
 
-if((tirePressure[0] == tirePressure[1]) && (tirePressure[2] == tirePressure[3])){
-    console.log("Tires pass spec!");
-}else{
-    console.log("Get your tires checked out!")
-};
 
-((tirePressure[0] == tirePressure[1]) && (tirePressure[2] == tirePressure[3])) ? console.log("Tires pass spec!") : console.log("Get your tires checked out!");
+((tirePressure[0] == tirePressure[1]) && (tirePressure[2] == tirePressure[3])) ? alert("Tires pass spec!") + (console.log("Tires pass spec!")) : alert("Get your tires checked out!") + (console.log("Get your tires checked out!"));
 
 
 
