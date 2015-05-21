@@ -5,6 +5,9 @@ SDI
 section 001
 Conditionals_worksheet
  */
+
+
+
 //Problem 1
 
 /*Convert a temperature to either degrees Celsius or degrees Fahrenheit depending on what the user has entered. If the user puts a “C” for the unit, the calculator should convert to Celsius. If the user puts “F” for the unit, the calculator should convert to Fahrenheit.
@@ -39,25 +42,29 @@ console.log(convertTo);
 var ThirtyTwo = 32
 
 var fiveNinths = 5/9
-
+//Make one variable that holds the celsius Conversion
 var convertToCelsius = (howManyDegrees - ThirtyTwo) * fiveNinths;
 
 console.log(convertToCelsius);
 
+//Make a Variable that holds the fahrenheit conversion
 var convertToFahrenheit = (howManyDegrees / fiveNinths) + ThirtyTwo;
 
 console.log(convertToFahrenheit);
 
 //Create your conditional if and else statement.
 
+/*Within your conditionals add alerts that initiates if an outcome is true.
+ */
 if(fahrenheit == convertTo){
     alert("Your temperature in degrees fahrenheit is " + convertToFahrenheit + " " + fahrenheit + ".")
 }else if(celsius == convertTo){
     alert("Your temperature in degrees celsius is " + convertToCelsius + " " + celsius + ".")
-}else{ alert("You have entered something invalid. Pleae refresh the page and try again.")};
+}else{ alert("You have entered something invalid. Please refresh the page and try again.")};
 
 
 
+//Problem 2
 
 
 
