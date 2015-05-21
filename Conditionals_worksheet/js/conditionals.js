@@ -15,7 +15,7 @@ Conditionals_worksheet
 
 //Alert the user what the following will do.
 
-alert("The following pop-up windows will assist you in converting temperature from/to Fahrenheit or from/to Celsius depending on what you want to do. Follow the instructions carefully.");
+/*________________alert("The following pop-up windows will assist you in converting temperature from/to Fahrenheit or from/to Celsius depending on what you want to do. Follow the instructions carefully.");
 
 
 //Create a variable that prompts the user how many degrees they want to convert.
@@ -85,15 +85,19 @@ var loginWithPassword = prompt("To Login, enter your password.");
 
 if((createUserName == loginWithUserName) && (createPassword == loginWithPassword)){
      console.log("Welcome, " + createUserName + "!")
+        alert("Welcome, " + createUserName + "!")
 
 }else if((createUserName !== loginWithUserName) && (createPassword == loginWithPassword)){
     console.log("User not found. Please try again.")
+        alert("User not found. Please try again.")
 
 }else if((createPassword !== loginWithPassword) && (createUserName == loginWithUserName)){
     console.log("Password does not match our records.")
+        alert("Password does not match our records.")
 
 }else if((createUserName !== loginWithUserName) && (createPassword !== loginWithPassword)){
     console.log("User not found, and password does not match our records. Please try again.")
+        alert("User not found, and password does not match our records. Please try again.")
 };
 
 
