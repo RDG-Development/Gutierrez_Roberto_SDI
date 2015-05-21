@@ -20,7 +20,7 @@ alert("The following pop-up windows will assist you in converting temperature fr
 
 //Create a variable that prompts the user how many degrees they want to convert.
 
-var howManyDegrees = parseInt(prompt("What is the temperature that you want to convert from? Only type the number, Example: Type ( 100 ) for 100 degrees fahrenheit/celsius"));
+/*_______________var howManyDegrees = parseInt(prompt("What is the temperature that you want to convert from? Only type the number, Example: Type ( 100 ) for 100 degrees fahrenheit/celsius"));
 
 console.log(howManyDegrees);
 
@@ -56,7 +56,7 @@ console.log(convertToFahrenheit);
 
 /*Within your conditionals add alerts that initiates if an outcome is true.
  */
-if(fahrenheit == convertTo){
+/*______________if(fahrenheit == convertTo){
     alert("Your temperature in degrees fahrenheit is " + convertToFahrenheit + " " + fahrenheit + ".")
 }else if(celsius == convertTo){
     alert("Your temperature in degrees celsius is " + convertToCelsius + " " + celsius + ".")
@@ -66,8 +66,31 @@ if(fahrenheit == convertTo){
 
 //Problem 2
 
+/*
+ Make sure the user has the correct username and password. If the username doesn’t match then a specific message for that should be printed to the console. If the password doesn’t match a message should appear for that, etc. Only one error message should appear.
+ */
 
+//Create variables for the username and password that a user can create through prompts
+var createUserName = prompt("Welcome. Please create a username.");
 
+var createPassword = prompt("Thank you. Now create a password. ");
+
+var loginWithUserName = prompt("To Login, enter your username.");
+
+var loginWithPassword = prompt("To Login, enter your password.");
+
+if((createUserName == loginWithUserName) && (createPassword == loginWithPassword)){
+     console.log("Welcome, " + createUserName + "!")
+
+}else if((createUserName !== loginWithUserName) && (createPassword == loginWithPassword)){
+    console.log("User not found. Please try again.")
+
+}else if((createPassword !== loginWithPassword) && (createUserName == loginWithUserName)){
+    console.log("Password does not match our records.")
+}else if((createUserName !== loginWithUserName)) && (createPassword !== loginWithPassword)){
+
+    console.log("User not found, and password does not match our records. Please try again.")
+};
 
 
 
