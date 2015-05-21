@@ -106,10 +106,19 @@ if((createUserName == loginWithUserName) && (createPassword == loginWithPassword
  To meet to maintenance standards a car’s front two tires should have the same pressure and the back two tires should have the same pressure.  But the front tires and the rear tires can have different pressure than each other, so it is not necessary for all four tires’ pressure to be the same. Create a single conditional that would determine if the tires of a given car are up to spec.
  */
 
-alert("Hi there, the following prompts will assist you in knowing if you have to adjust your tire pressure.")
+alert("Hi there, the following prompts will assist you in knowing if you have to adjust the tire pressures of your car. You will need to know the tire pressure for all four of your tires.")
 
 var tirePressure = [Number(prompt("What is your front left tire pressure? Please enter only a number value such as 32.")), Number(prompt("What is your front right tire pressure? Please enter only a number value such as 32.")), Number(prompt("What is your rear left tire pressure? Please enter only a number value such as 32.")), Number(prompt("What is your rear right tire pressure? Please enter only a number value such as 32."))]
 
-console.log(tirePressure)
+console.log(tirePressure);
+
+if((tirePressure[0] == tirePressure[1]) && (tirePressure[2] == tirePressure[3])){
+    console.log("Tires pass spec!");
+}else{
+    console.log("Get your tires checked out!")
+};
+
+
+
 
 
