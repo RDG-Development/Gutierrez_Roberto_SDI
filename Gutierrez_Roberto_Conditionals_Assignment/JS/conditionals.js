@@ -40,6 +40,7 @@ var chooseAPath = [1,2];
 console.log(chooseAPath);
 
 //Create an explanation of what each numerical value will represent in the future.
+
 //chooseAPath[0]  // This will be "Dark Forest";
 
 //chooseAPath[1]  // This will be"Volcanic Valley";
@@ -72,6 +73,8 @@ if(userPathChoice == chooseAPath[0]){
     alert("Your choice has brought you to Dark Forest covered in strange silky and sticky webs.\n Within a clump of web, a glimmer catches your eye.\n You have found a pile of unclaimed riches.\n Suddenly you are ambushed by a group of grotesque giant spiders.\n You quickly un-sheath your sword and prepare to defend yourself.");
      //Create variables for user Damage and total spider health.
        var totalUserDamage = Number(prompt("Defend yourself " + userName + "! \nEnter how much damage you will do against these grotesque creatures with a number value!"));
+    //console.log User Damage
+    console.log(totalUserDamage);
 
     //Test the users entry to make sure it a valid value
     if(isNaN(totalUserDamage) || totalUserDamage == 0){
@@ -90,26 +93,45 @@ if(userPathChoice == chooseAPath[0]){
     (totalUserDamage > spidersTotalHealth) ? alert("Well done " + userName + ". You have slain your enemies and have claimed the riches. You have fought bravely and have earned the favor of the gods.") : alert(userName + " you have been slain! You fought with all your might, but to no avail. At least you have died with honor.")
 
 }
-//Create a condition for this path choice
+//Create a condition for path choice 2
 if(userPathChoice == chooseAPath[1]){
     //Create an alert for this path choice
     alert(userName + ", your bravery has brought you to a Volcanic Valley. You see an open metal chest sitting on small island surrounded by smouldering lava. You foolishly approach and are suddenly struck by the mighty tail of a red dragon! You quickly recover and prepare to cast your ice spells.");
-    //Create a prompt for total spells cast by user.
 
-    //
+
+    //Create a prompt for total spells cast by user.
         var totalSpellsCast = Number(prompt(userName + " How many spells will you cast to try and bring down this beast?\nEnter a number value. Each of your spells causes 25 damage."));
+
+    //Create a valid value test for prompt
     if(isNaN(totalSpellsCast) || totalSpellsCast == 0){
-        totalSpellsCast = Number(prompt("You have not entered a value " + userName + "! \n Enter a value worthy of a dragon or face the consequences!"))
+        totalSpellsCast = Number(prompt("You have not entered a value " + userName + "! \n Enter a value worthy of a dragon or face the consequences!"));
     }
          //Create variables to determine the damage and health that will be used to calculate.
-         var individualSpellDamage = 25
-         var totalSpellDamage = totalSpellsCast * individualSpellDamage
-         var redDragonTotalHealth = 150
-         var userSuccessConditionValue = redDragonTotalHealth - totalSpellDamage
+         var individualSpellDamage = 25;
+         var totalSpellDamage = totalSpellsCast * individualSpellDamage;
+         var redDragonTotalHealth = 150;
+         var userSuccessConditionValue = redDragonTotalHealth - totalSpellDamage;
 
+    //console.log(totalSpellDamage
+console.log(totalSpellDamage);
+//Create a ternary that gives the user success or death.
         userSuccessConditionValue<0 ? alert("The gods smile upon you this day! " + userName + "! Your spells have extinguished the flames of this would be dragon! The riches within the chest are yours for the taking! Well done!") : alert("Your bravery knows no bounds " + userName + "! Alas your bravery alone was not enough to defeat a dragon. Your smoldering corpse will serve as a tasty snack for this beast!");
 
 }
+
+/*
+I refused to enter a name and was named Nameless by default.
+I refused to choose a path and was smitten by the gods.
+I tested both paths thoroughly and with different entries.
+I entered damage that was too low on path 1 (50) and was defeated.
+I entered damage that was much higher (500) than spider health and was victorious.
+I entered invalid values on path 1 and was defeated.
+I refused to enter values or entered invalid values on path 2 and was defeated.
+I entered 8 spells and defeated the dragon.
+I entered 4 spells and was killed by the dragon.
+
+Thank you for trying out my code. I hope you like it.
+ */
 
 
 
