@@ -29,12 +29,12 @@ console.log(userName);
 
 //alert user that he/she has entered is a hero and is at a crossroad of destinies.
 
-alert(userName + ", before you lies three paths. You must choose your destiny and reap its benefits, or suffer its' consequences.");
+alert(userName + ", before you lies two paths. You must choose your destiny and reap its benefits, or suffer its' consequences.");
 
 
 //Create an array of the three paths a user can choose.
 
-var chooseAPath = [1,2,3];
+var chooseAPath = [1,2];
 
 //Console.log the variable to see if it captures the values.
 console.log(chooseAPath);
@@ -44,17 +44,17 @@ console.log(chooseAPath);
 
 //chooseAPath[1]  // This will be"Volcanic Valley";
 
-//chooseAPath[2] // This will be"Icy Tundra";
+
 
 
 
 //Create a prompt that allows the user to choose which path
 
-var userPathChoice = Number(prompt(userName + " Will you choose Path 1?\n Path 2?\n or Path 3?\n Enter only the number value of the path you choose."));
+var userPathChoice = Number(prompt(userName + " Will you choose Path 1?\n Path 2?\n Enter only the number value of the path you choose."));
 
 //Enter a re-prompt that allows the user to enter a number between 1 and 3.
-if(!(userPathChoice >= 1) || !(userPathChoice <=3)){
-    userPathChoice = Number(prompt("You have entered an invalid entry.\n Please enter either the number 1, 2, or 3 for your path choice."))
+if(!(userPathChoice >= 1) || !(userPathChoice <=2)){
+    userPathChoice = Number(prompt("You have entered an invalid entry.\n Please enter either the number 1, or 2 for your path choice."))
 }
 
 //Console.log userPathChoice to see if the value is caught correctly.
@@ -71,14 +71,31 @@ console.log(userPathChoice);
 if(userPathChoice == chooseAPath[0]){
     alert("Your choice has brought you to Dark Forest covered in strange silky and sticky webs.\n Within a clump of web, a glimmer catches your eye.\n You have found a pile of unclaimed riches.\n Suddenly you are ambushed by a group of grotesque giant spiders.\n You quickly un-sheath your sword and prepare to defend yourself.");
      //Create variables for user Damage and total spider health.
-       var totalUserDamage = prompt("Defend yourself" + userName + "! \nEnter how much damage you will do against these grotesque creatures with a number value.");
+       var totalUserDamage = Number(prompt("Defend yourself " + userName + "! \nEnter how much damage you will do against these grotesque creatures with a number value!"));
         //Check to see if the values are captured through console.log
         console.log(totalUserDamage);
 
-         var spidersTotalHealth = 200;
+         var totalSpiders = 10;
+         var individualSpiderHealth = 20;
+         var spidersTotalHealth = totalSpiders * individualSpiderHealth;
          console.log(spidersTotalHealth);
 
+    //Create a Ternary condition within this one to determine if the user survives.
+    (totalUserDamage > spidersTotalHealth) ? alert("Well done " + userName + ". You have slain your enemies and have claimed the riches. You have fought bravely and have earned the favor of the gods.") : alert(userName + " you have been slain! You fought with all your might, but to no avail. At least you have died with honor.")
+
 }
+//Create a condition for this path choice
+if(userPathChoice == chooseAPath[1]){
+    //Create an alert for this path choice
+    alert(userName + ", your bravery has brought you to a Volcanic Valley. You see an open metal chest sitting on small island surrounded by smouldering lava. You foolishly approach and are suddenly struck by the mighty tail of a red dragon! You quickly prepare to cast your ice spells.");
+        var totalSpellsCast = Number(prompt(userName + " How many spells will you cast to try and bring down this beast?\n Enter a number value."));
+        var individualSpellDamage = 25
+        var totalSpellDamage = totalSpellsCast * individualSpellDamage
+        var redDragonTotalHealth = 150
+
+
+}
+
 
 
 
