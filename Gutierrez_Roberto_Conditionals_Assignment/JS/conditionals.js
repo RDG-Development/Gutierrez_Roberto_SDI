@@ -68,8 +68,16 @@ if(userPathChoice == 0 || isNaN(userPathChoice)){
 console.log(userPathChoice);
 
 //Create a path for the user if he/she chooses 1 as their path.
-if(){
-    
+if(userPathChoice == chooseAPath[0]){
+    alert("Your choice has brought you to Dark Forest covered in strange silky and sticky webs.\n Within a clump of web, a glimmer catches your eye.\n You have found a pile of unclaimed riches.\n Suddenly you are ambushed by a group of grotesque giant spiders.\n You quickly un-sheath your sword and prepare to defend yourself.");
+     //Create variables for user Damage and total spider health.
+       var totalUserDamage = prompt("Defend yourself" + userName + "! \nEnter how much damage you will do against these grotesque creatures with a number value.");
+        //Check to see if the values are captured through console.log
+        console.log(totalUserDamage);
+
+         var spidersTotalHealth = 200;
+         console.log(spidersTotalHealth);
+
 }
 
 
