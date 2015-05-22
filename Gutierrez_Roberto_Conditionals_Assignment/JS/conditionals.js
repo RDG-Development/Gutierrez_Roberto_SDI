@@ -76,7 +76,7 @@ if(userPathChoice == chooseAPath[0]){
     //Test the users entry to make sure it a valid value
     if(isNaN(totalUserDamage) || totalUserDamage == 0){
         //alert user to enter a value that is valid.
-        totalUserDamage = Number(prompt("You have entered an invalid entry. Enter how much damage you will do " + userName + "! If you do not you will perish!"));
+        totalUserDamage = Number(prompt("You have entered an invalid entry. Enter how much damage you will inflict " + userName + "! If you do not enter a valid value, you will perish!"));
     }
         //Check to see if the values are captured through console.log
         console.log(totalUserDamage);
