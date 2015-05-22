@@ -50,9 +50,16 @@ console.log(chooseAPath);
 //console.log(chooseAPath[2]);
 
 //Create a prompt that allows the user to choose which path
-var userPathChoice = prompt(userName + " Will you choose Path 1?\n Path 2?\n or Path 3?\n Enter only the number value of the path you choose.");
+
+var userPathChoice = Number(prompt(userName + " Will you choose Path 1?\n Path 2?\n or Path 3?\n Enter only the number value of the path you choose."));
+
+//Enter a re-prompt that allows the user to enter a number between 1 and 3.
+if(!(userPathChoice >= 1) || !(userPathChoice <=3)){
+    userPathChoice = Number(prompt("You have entered an invalid entry.\n Please enter either the number 1, 2, or 3 for your path choice."))
+}
 
 
+console.log(userPathChoice);
 
 
 
