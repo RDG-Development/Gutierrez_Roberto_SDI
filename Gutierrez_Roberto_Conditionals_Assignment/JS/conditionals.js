@@ -50,7 +50,7 @@ console.log(chooseAPath);
 
 //Create a prompt that allows the user to choose which path
 
-var userPathChoice = Number(prompt(userName + " Will you choose Path 1?\n Path 2?\n Enter only the number value of the path you choose."));
+var userPathChoice = Number(prompt(userName + " Will you choose Path 1? or Path 2?\n Enter only the number value of the path you choose."));
 
 //Enter a re-prompt that allows the user to enter a number between 1 and 3.
 if(!(userPathChoice >= 1) || !(userPathChoice <=2)){
@@ -72,6 +72,12 @@ if(userPathChoice == chooseAPath[0]){
     alert("Your choice has brought you to Dark Forest covered in strange silky and sticky webs.\n Within a clump of web, a glimmer catches your eye.\n You have found a pile of unclaimed riches.\n Suddenly you are ambushed by a group of grotesque giant spiders.\n You quickly un-sheath your sword and prepare to defend yourself.");
      //Create variables for user Damage and total spider health.
        var totalUserDamage = Number(prompt("Defend yourself " + userName + "! \nEnter how much damage you will do against these grotesque creatures with a number value!"));
+
+    //Test the users entry to make sure it a valid value
+    if(isNaN(totalUserDamage) || totalUserDamage == 0){
+        //alert user to enter a value that is valid.
+        totalUserDamage = Number(prompt("You have entered an invalid entry. Enter how much damage you will do " + userName + "! If you do not you will perish!"));
+    }
         //Check to see if the values are captured through console.log
         console.log(totalUserDamage);
 
@@ -87,12 +93,21 @@ if(userPathChoice == chooseAPath[0]){
 //Create a condition for this path choice
 if(userPathChoice == chooseAPath[1]){
     //Create an alert for this path choice
-    alert(userName + ", your bravery has brought you to a Volcanic Valley. You see an open metal chest sitting on small island surrounded by smouldering lava. You foolishly approach and are suddenly struck by the mighty tail of a red dragon! You quickly prepare to cast your ice spells.");
-        var totalSpellsCast = Number(prompt(userName + " How many spells will you cast to try and bring down this beast?\n Enter a number value."));
-        var individualSpellDamage = 25
-        var totalSpellDamage = totalSpellsCast * individualSpellDamage
-        var redDragonTotalHealth = 150
+    alert(userName + ", your bravery has brought you to a Volcanic Valley. You see an open metal chest sitting on small island surrounded by smouldering lava. You foolishly approach and are suddenly struck by the mighty tail of a red dragon! You quickly recover and prepare to cast your ice spells.");
+    //Create a prompt for total spells cast by user.
 
+    //
+        var totalSpellsCast = Number(prompt(userName + " How many spells will you cast to try and bring down this beast?\nEnter a number value. Each of your spells causes 25 damage."));
+    if(isNaN(totalSpellsCast) || totalSpellsCast == 0){
+        totalSpellsCast = Number(prompt("You have not entered a value " + userName + "! \n Enter a value worthy of a dragon or face the consequences!"))
+    }
+         //Create variables to determine the damage and health that will be used to calculate.
+         var individualSpellDamage = 25
+         var totalSpellDamage = totalSpellsCast * individualSpellDamage
+         var redDragonTotalHealth = 150
+         var userSuccessConditionValue = redDragonTotalHealth - totalSpellDamage
+
+        userSuccessConditionValue<0 ? alert("The gods smile upon you this day! " + userName + "! Your spells have extinguished the flames of this would be dragon! The riches within the chest are yours for the taking! Well done!") : alert("Your bravery knows no bounds " + userName + "! Alas your bravery alone was not enough to defeat a dragon. Your smoldering corpse will serve as a tasty snack for this beast!");
 
 }
 
