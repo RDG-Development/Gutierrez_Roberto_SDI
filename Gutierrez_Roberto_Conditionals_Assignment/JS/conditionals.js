@@ -18,14 +18,14 @@ var userName = prompt("Welcome, Hero! What is your name?");
 //validate the prompt.
 if(userName === ""){
     //This will run if user does no enter a anything.
-    userName = prompt("Your entry was blank!. \nPlease enter your heroes name or you will be labeled Nameless.");
+    userName = prompt("Your entry was blank! \nPlease enter your heroes name or you will be labeled Nameless.");
 }
 
 if(userName === ""){
     userName = "Nameless"
 }
 //log the userName in console
-console.log(userName);
+console.log(userName + " Is your name.");
 
 //alert user that he/she has entered is a hero and is at a crossroad of destinies.
 
@@ -37,7 +37,7 @@ alert(userName + ", before you lies two paths. You must choose your destiny and 
 var chooseAPath = [1,2];
 
 //Console.log the variable to see if it captures the values.
-console.log(chooseAPath);
+console.log(chooseAPath + "Is your path choice.");
 
 //Create an explanation of what each numerical value will represent in the future.
 
@@ -51,7 +51,7 @@ console.log(chooseAPath);
 
 //Create a prompt that allows the user to choose which path
 
-var userPathChoice = Number(prompt(userName + " Will you choose Path 1? or Path 2?\n Enter only the number value of the path you choose."));
+var userPathChoice = Number(prompt(userName + " will you choose Path 1? or Path 2?\n Enter only the number value of the path you choose."));
 
 //Enter a re-prompt that allows the user to enter a number between 1 and 3.
 if(!(userPathChoice >= 1) || !(userPathChoice <=2)){
@@ -59,14 +59,14 @@ if(!(userPathChoice >= 1) || !(userPathChoice <=2)){
 }
 
 //Console.log userPathChoice to see if the value is caught correctly.
-console.log(userPathChoice);
+console.log(userPathChoice + " Is the path you chose.");
 
 //Create a fate for the user if he/she decides to not enter anything or an invalid entry on second prompt.
 if(userPathChoice == 0 || isNaN(userPathChoice)){
     alert(userName + " You have chosen no path at all. The gods are displeased and have turned you into stone. Suffer the consequences of your choice!" + userName + "!")
 }
 //Console.log user entry to see what they wrote.
-console.log(userPathChoice);
+console.log(userPathChoice + " Is your path.");
 
 //Create a path for the user if he/she chooses 1 as their path.
 if(userPathChoice == chooseAPath[0]){
@@ -74,7 +74,7 @@ if(userPathChoice == chooseAPath[0]){
      //Create variables for user Damage and total spider health.
        var totalUserDamage = Number(prompt("Defend yourself " + userName + "! \nEnter how much damage you will do against these grotesque creatures with a number value!"));
     //console.log User Damage
-    console.log(totalUserDamage);
+    console.log(totalUserDamage + " Is your damage.");
 
     //Test the users entry to make sure it a valid value
     if(isNaN(totalUserDamage) || totalUserDamage == 0){
@@ -82,7 +82,7 @@ if(userPathChoice == chooseAPath[0]){
         totalUserDamage = Number(prompt("You have entered an invalid entry. Enter how much damage you will inflict " + userName + "! If you do not enter a valid value, you will perish!"));
     }
         //Check to see if the values are captured through console.log
-        console.log(totalUserDamage);
+        console.log(totalUserDamage + " Is your damage.");
 
          var totalSpiders = 10;
          var individualSpiderHealth = 20;
@@ -113,7 +113,7 @@ if(userPathChoice == chooseAPath[1]){
          var userSuccessConditionValue = redDragonTotalHealth - totalSpellDamage;
 
     //console.log(totalSpellDamage
-console.log(totalSpellDamage);
+console.log(totalSpellDamage + " Is your total spell damage.");
 //Create a ternary that gives the user success or death.
         userSuccessConditionValue<0 ? alert("The gods smile upon you this day! " + userName + "! Your spells have extinguished the flames of this would be dragon! The riches within the chest are yours for the taking! Well done!") : alert("Your bravery knows no bounds " + userName + "! Alas your bravery alone was not enough to defeat a dragon. Your smoldering corpse will serve as a tasty snack for this beast!");
 
