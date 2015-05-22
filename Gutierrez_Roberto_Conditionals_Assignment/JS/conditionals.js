@@ -18,7 +18,7 @@ var userName = prompt("Welcome, Hero! What is your name?");
 //validate the prompt.
 if(userName === ""){
     //This will run if user does no enter a anything.
-    userName = prompt("Your entry was blank!. \nPlease enter your heroes name or you will be Nameless");
+    userName = prompt("Your entry was blank!. \nPlease enter your heroes name or you will be labeled Nameless.");
 }
 
 if(userName === ""){
