@@ -4,26 +4,37 @@
 //alert("Testing Connection")
 
 
+// This is a normal function
 
-function calcArea(w,h){
+/*function calcArea(w,h){
     var area = w * h;
     return area
     console.log(area);
 };
+*/
 
 
-var userRectangleArea = calcArea(Number(prompt("What is the width of your rectangle?")), Number(prompt("What is the length of your rectangle?")));
+//This is an anonymous function below:
 
-console.log(userRectangleArea);
 
-alert("Your rectangle area is, " + userRectangleArea + " units.");
-
-//This is a procedure below. It is a function, but does not return a value. IT just performs a list of instructions that are coded into it.
-
-function calcArea(w,h){
-    var area = w * h;
-    console.log(area);
+var c = function(w,l){
+    var area = w * l;
+    return area
 };
+
+var userArea = c(Number(prompt("width?")),Number(prompt("length?")));
+
+alert(userArea);
+
+if(isNaN(userArea) || userArea == 0){
+    userArea = c(Number(prompt("width?")),Number(prompt("length?")));
+}
+
+
+console.log(userArea);
+
+
+
 
 
 
