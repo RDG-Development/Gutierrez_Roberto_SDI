@@ -26,7 +26,7 @@ var calculateCircumference = function(r){
    //Create variables that hold the value for pi and the calculation for diameter.
     var pi = 3.14;
     var diameter = 2*r;
-
+//Create a variable that holds the calculation of pi * diameter
     var circumference = pi * diameter;
 };
 
