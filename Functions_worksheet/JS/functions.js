@@ -21,6 +21,7 @@ SDI
 
 // Circumference. Problem 1
 
+//Create a function that calculates the circumference of a circle.
 var calculateCircumference = function(r){
     var pi = 3.14;
     var diameter = 2*r;
