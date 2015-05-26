@@ -73,3 +73,5 @@ var beeStingCalculation = function(p){
 var userPoundsInput = Number(prompt("What is the weight of the animal or human in pounds? You can put your own wight.\nOnly enter a number value."));
 
 
+var userStingValue = beeStingCalculation(userPoundsInput);
+
