@@ -30,7 +30,7 @@ var calculateCircumference = function(r){
     var circumference = pi * diameter;
     return circumference
 };
-
+//Create a variable that allows the user to enter their own radius.
 var userRadius = Number(prompt("What is the radius of your circle?"));
 
 if(isNaN(userRadius) || userRadius <= 0){
