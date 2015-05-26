@@ -64,3 +64,8 @@ Calculate how many bee stings are needed to kill an animal in a function
 alert("Warning: User the area you are about to enter is highly infested with killer bees. This website lets you know how many bee stings would cause a human or an animal death.");
 
 
+var beeStingCalculation = function(p){
+    var stingPerPound = 8.666666667
+    var
+        }
+
