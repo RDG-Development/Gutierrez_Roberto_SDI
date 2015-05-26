@@ -38,3 +38,4 @@ if(isNaN(userRadius) || userRadius <= 0){
     userRadius = Number(prompt("You have entered an invalid number.\nPlease enter a number greater than zero or your circumference will not be calculated."));
 };
 
+var userCircumference = calculateCircumference()
