@@ -38,9 +38,13 @@ if(isNaN(userRadius) || userRadius <= 0){
     userRadius = Number(prompt("You have entered an invalid number.\nPlease enter a number greater than zero or your circumference will not be calculated."));
 };
 
+//Create a variable that holds the final solution for the user.
 var userCircumference = calculateCircumference(userRadius);
 
 
+
 alert("The circumference of your circle is " + userCircumference + " units.");
+
+isNaN(userCircumference) ? alert("The value you entered was invalid and was not calculated.") : alert("Thank you for using our circumference calculator.");
 
 console.log("The circumference of your circle is " + userCircumference + " units.");
