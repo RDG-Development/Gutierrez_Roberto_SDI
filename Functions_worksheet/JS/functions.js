@@ -41,13 +41,18 @@ if(isNaN(userRadius) || userRadius <= 0){
 //Create a variable that holds the final solution for the user.
 var userCircumference = calculateCircumference(userRadius);
 
-
+//Create a conditional statement that executes after a valid user entry.
 if(userCircumference > 0) {
     alert("The circumference of your circle is " + userCircumference + " units.");
     alert("Thank you for using our circumference calculator.")
 };
 
+//Create a conditional that occurs after a invalid user entry.
 if(isNaN(userCircumference) || userCircumference <= 0){
     alert("The value you have entered was invalid and was not calculated.\nPlease refresh the page if you want to start over.");
 };
+
+//console.log the final entry that the user has input.
 console.log("The circumference of your circle is " + userCircumference + " units.");
+
+
