@@ -56,3 +56,11 @@ if(isNaN(userCircumference) || userCircumference <= 0){
 console.log("The circumference of your circle is " + userCircumference + " units.");
 
 
+//Problem 2 Stung!
+/*It takes 8.666666667 bee stings per pound to kill an animal.
+Calculate how many bee stings are needed to kill an animal in a function
+ */
+
+alert("Warning: User the area you are about to enter is highly infested with killer bees. This website lets you know how many bee stings would cause a human or an animal death.");
+
+
