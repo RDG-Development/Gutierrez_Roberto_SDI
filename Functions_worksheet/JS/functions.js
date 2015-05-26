@@ -65,7 +65,11 @@ alert("Warning: User the area you are about to enter is highly infested with kil
 
 
 var beeStingCalculation = function(p){
-    var stingPerPound = 8.666666667
-    var
-        }
+    var stingPerPound = 8.666666667;
+    var totalNumberOfStings = stingPerPound * p;
+    return totalNumberOfStings;
+        };
+
+var userPoundsInput = Number(prompt("What is the weight of the animal or human in pounds? You can put your own wight.\nOnly enter a number value."));
+
 
