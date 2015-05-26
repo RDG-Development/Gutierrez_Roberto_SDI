@@ -28,7 +28,7 @@ var calculateCircumference = function(r){
     var diameter = 2*r;
 //Create a variable that holds the calculation of pi * diameter
     var circumference = pi * diameter;
-    return circumference
+    return circumference;
 };
 //Create a variable that allows the user to enter their own radius.
 var userRadius = Number(prompt("What is the radius of your circle?"));
@@ -42,11 +42,12 @@ if(isNaN(userRadius) || userRadius <= 0){
 var userCircumference = calculateCircumference(userRadius);
 
 
-if() {
+if(userCircumference > 0) {
     alert("The circumference of your circle is " + userCircumference + " units.");
-}
+    alert("Thank you for using our circumference calculator.")
+};
 
 if(isNaN(userCircumference) || userCircumference <= 0){
-    alert("The value you have entered was invalid and was not calculated.\nPlease refresh the page if you want to start over.")
-}
+    alert("The value you have entered was invalid and was not calculated.\nPlease refresh the page if you want to start over.");
+};
 console.log("The circumference of your circle is " + userCircumference + " units.");
