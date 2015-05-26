@@ -81,4 +81,8 @@ var userStingValue = beeStingCalculation(userPoundsInput);
 
 if(isNaN(userStingValue) || userStingValue < 0){
     alert("User, the value you have entered was invalid because it was either not a number or less than 0.\nPlease refresh the page in order to try again.");
+
+    alert("The number of stings that would be fatal towards an animal or human of " + userPoundsInput + " pounds is, " + userStingValue + " stings.");
+
+
 }
