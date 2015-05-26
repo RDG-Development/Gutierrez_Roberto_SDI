@@ -28,6 +28,7 @@ var calculateCircumference = function(r){
     var diameter = 2*r;
 //Create a variable that holds the calculation of pi * diameter
     var circumference = pi * diameter;
+    return circumference
 };
 
 var userRadius = Number(prompt("What is the radius of your circle?"));
