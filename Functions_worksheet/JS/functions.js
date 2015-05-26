@@ -26,10 +26,10 @@ var calculateCircumference = function(r){
     var diameter = 2*r;
     var circumference = pi * diameter;
 };
+
 var userRadius = Number(prompt("What is the radius of your circle?"));
 
 if(isNaN(userRadius) || userRadius <= 0){
-                    userRadius = Number(prompt("You have entered an invalid number.\nPlease enter a number greater than zero or your circumference will not be calculated."));
+    userRadius = Number(prompt("You have entered an invalid number.\nPlease enter a number greater than zero or your circumference will not be calculated."));
 };
-
 
