@@ -33,6 +33,7 @@ var calculateCircumference = function(r){
 //Create a variable that allows the user to enter their own radius.
 var userRadius = Number(prompt("What is the radius of your circle?"));
 
+//Create a validity test for userRadius variable.
 if(isNaN(userRadius) || userRadius <= 0){
     userRadius = Number(prompt("You have entered an invalid number.\nPlease enter a number greater than zero or your circumference will not be calculated."));
 };
