@@ -79,3 +79,6 @@ if(isNaN(userPoundsInput) || userPoundsInput < 0){
 
 var userStingValue = beeStingCalculation(userPoundsInput);
 
+if(isNaN(userStingValue) || userStingValue < 0){
+    alert("User, the value you have entered was invalid because it was either not a number or less than 0.\nPlease refresh the page in order to try again.");
+}
