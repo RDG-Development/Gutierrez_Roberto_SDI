@@ -61,29 +61,32 @@ console.log("The circumference of your circle is " + userCircumference + " units
 Calculate how many bee stings are needed to kill an animal in a function
  */
 
+//Create an alert that tells the user what the calculation will do.
 alert("Warning: User the area you are about to enter is highly infested with killer bees. This website lets you know how many bee stings would cause a human or an animal death.");
 
-
+// Create a function that holds the calculation.
 var beeStingCalculation = function(p){
     var stingPerPound = 8.666666667;
     var totalNumberOfStings = stingPerPound * p;
     return totalNumberOfStings;
         };
-
+//Create a variable that holds the users pound inquiry..
 var userPoundsInput = Number(prompt("What is the weight of the animal or human in pounds? You can put your own wight.\nOnly enter a number value."));
 
+//Create a validity test for the previous variable mentioned.
 if(isNaN(userPoundsInput) || userPoundsInput < 0){
     var userPoundsInput = Number(prompt("You have entered an invalid value\nWhat is the weight of the animal or human in pounds? You can put your own wight.\nOnly enter a number value or your value will not be calculated."));
 };
 
-
+//Create a variable that holds the final sting output result.
 var userStingValue = beeStingCalculation(userPoundsInput);
 
+//create a validity test that only runs if the user continues to put a invalid entry.
 if(isNaN(userStingValue) || userStingValue < 0) {
     alert("User, the value you have entered was invalid because it was either not a number or less than 0.\nPlease refresh the page in order to try again.");
+};
 
-    if (userStingValue > 0){
-        alert("The number of stings that would be fatal towards an animal or human of " + userPoundsInput + " pounds is, " + userStingValue + " stings.");
-}
-
-}
+//Create a validity test that displays the correct result, and only executes if the inputs are valid.
+if (userStingValue > 0){
+    alert("The number of stings that would be fatal towards an animal or human of " + userPoundsInput + " pounds is, " + userStingValue + " stings.");
+};
