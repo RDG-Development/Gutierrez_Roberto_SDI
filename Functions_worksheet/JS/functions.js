@@ -40,4 +40,6 @@ if(isNaN(userRadius) || userRadius <= 0){
 
 var userCircumference = calculateCircumference(userRadius);
 
+alert("The circumference of your circle is " + userCircumference + " units.");
+
 console.log("The circumference of your circle is " + userCircumference + " units.");
