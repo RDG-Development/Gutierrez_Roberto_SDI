@@ -42,9 +42,11 @@ if(isNaN(userRadius) || userRadius <= 0){
 var userCircumference = calculateCircumference(userRadius);
 
 
+if() {
+    alert("The circumference of your circle is " + userCircumference + " units.");
+}
 
-alert("The circumference of your circle is " + userCircumference + " units.");
-
-isNaN(userCircumference) ? alert("The value you entered was invalid and was not calculated.") : alert("Thank you for using our circumference calculator.");
-
+if(isNaN(userCircumference) || userCircumference <= 0){
+    alert("The value you have entered was invalid and was not calculated.\nPlease refresh the page if you want to start over.")
+}
 console.log("The circumference of your circle is " + userCircumference + " units.");
