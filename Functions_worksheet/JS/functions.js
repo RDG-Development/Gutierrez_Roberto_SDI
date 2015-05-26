@@ -23,8 +23,10 @@ SDI
 
 //Create a function that calculates the circumference of a circle.
 var calculateCircumference = function(r){
+   //Create variables that hold the value for pi and the calculation for diameter.
     var pi = 3.14;
     var diameter = 2*r;
+
     var circumference = pi * diameter;
 };
 
