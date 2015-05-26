@@ -72,10 +72,11 @@ var beeStingCalculation = function(p){
         };
 //Create a variable that holds the users pound inquiry..
 var userPoundsInput = Number(prompt("What is the weight of the animal or human in pounds? You can put your own wight.\nOnly enter a number value."));
-
+    console.log("The value you have entered is " + userPoundsInput + " pounds.");
 //Create a validity test for the previous variable mentioned.
 if(isNaN(userPoundsInput) || userPoundsInput < 0){
-    var userPoundsInput = Number(prompt("You have entered an invalid value\nWhat is the weight of the animal or human in pounds? You can put your own wight.\nOnly enter a number value or your value will not be calculated."));
+    var userPoundsInput = Number(prompt("You have entered an invalid value\nWhat is the weight of the animal or human in pounds? You can put your own wight.\nOnly enter a number value, or your value will not be calculated."));
+    console.log(userPoundsInput + " pounds is the value you have entered.");
 };
 
 //Create a variable that holds the final sting output result.
@@ -83,10 +84,11 @@ var userStingValue = beeStingCalculation(userPoundsInput);
 
 //create a validity test that only runs if the user continues to put a invalid entry.
 if(isNaN(userStingValue) || userStingValue < 0) {
-    alert("User, the value you have entered was invalid because it was either not a number or less than 0.\nPlease refresh the page in order to try again.");
+    alert("User, the value in pounds you have entered was invalid because it was either not a number or less than 0.\nPlease refresh the page in order to try again.");
 };
 
 //Create a validity test that displays the correct result, and only executes if the inputs are valid.
 if (userStingValue > 0){
     alert("The number of stings that would be fatal towards an animal or human of " + userPoundsInput + " pounds is, " + userStingValue + " stings.");
-};
+    console.log("The number of stings that would be fatal towards an animal or human of " + userPoundsInput + " pounds is, " + userStingValue + " stings.");
+}
