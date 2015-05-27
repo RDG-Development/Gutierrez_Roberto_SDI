@@ -13,26 +13,22 @@
 };
 */
 
+var a = 500;
 
-//This is an anonymous function below:
+do{
+    console.log("Ellen you have " + a + " Enemies left.");
 
+    if(a == 1){
+        console.log("Ellen you have one Enemy left.")
+    }
 
-var c = function(w,l){
-    var area = w * l;
-    return area
-};
+    if(a == 0){
+        console.log("Ellen you have killed all your enemies. You win!!!!!!")
+    }
+    a--
 
-var userArea = c(Number(prompt("width?")),Number(prompt("length?")));
-
-alert(userArea);
-
-if(isNaN(userArea) || userArea == 0){
-    userArea = c(Number(prompt("width?")),Number(prompt("length?")));
 }
-
-
-console.log(userArea);
-
+while(a >= 0);
 
 
 
