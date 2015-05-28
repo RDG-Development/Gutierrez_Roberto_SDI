@@ -52,3 +52,11 @@ if(userClass !== "Warrior" & userClass !== "Mage" & userClass !== "Ranger" & use
 
     };
 };
+
+//console.log the final user class, and alert the user of their choice.
+console.log(userClass);
+alert(userName + ", you are a " + userClass + ". You will now enter the Cave of Trials.");
+
+//Alert the user of the first trial.
+alert("You pass through a narrow cavern and emerge into a strange room? There are grave head stones all around, with an ominous fog creeping around you. Suddenly a hand sprouts out of the ground and grips your ankle. Startled you jump back to free yourself. 100 rotted corpses emerge from the ground. With hunger driving them, they slowly begin to surround you.\nPREPARE TO DEFEND YOURSELF.");
+
