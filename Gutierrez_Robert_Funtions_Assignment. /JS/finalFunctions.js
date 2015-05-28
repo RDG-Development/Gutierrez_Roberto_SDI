@@ -71,8 +71,8 @@ var mageAttackDamageArray = [60,40,80];
 //rangerAttackArray[0]"FocusedShot" = 55, rangerAttackArray[1]"Explosive Bolt" = 85, rangerAttackArray[2]"Dual-Weild Slash" = 40
 var rangerAttackDamageArray = [55,85,40];
 
-//peasantAttackArray{0}"Throw Potato" = 1, peasantAttackArray[1]"Wooden Spoon Strike" = 1,peasantAttackArray[2]"Shin Kick" = 2
-var peasantAttackDamageArray = [1,1,2];
+//peasantAttackArray{0}"Throw Potato" = .1, peasantAttackArray[1]"Wooden Spoon Strike" = .1,peasantAttackArray[2]"Shin Kick" = .2
+var peasantAttackDamageArray = [.1,.1,.2];
 
 
 //Create a Damage Calculations for a warrior function
@@ -131,23 +131,56 @@ if(userClass == "Warrior" || userClass == "warrior"){
     var userWarriorAttackTotal = warriorAttackDamageCalculations(Number(prompt("How many times will you use Impale on your enemies?\nEnter a number only")),Number(prompt("How many times will you use Slash on your enemies?\nEnter only a number")),Number(prompt("How many times will you use a Power-Swing on your enemies?\nEnter only a number.")));
 
 //Create a validity test for the users prompts.
-        if(isNaN(userWarriorAttackTotal) || userWarriorAttackTotal <= 0){
+        while(isNaN(userWarriorAttackTotal) || userWarriorAttackTotal <= 0){
             var userWarriorAttackTotal = warriorAttackDamageCalculations(Number(prompt("You have entered an invalid entry. If a valid number is not entered you may perish.\nEnter a number for the Impale skill")),Number(prompt("You have entered an invalid entry. If a valid number is not entered you may perish.\nEnter a number for the Slash skill")),Number(prompt("You have entered an invalid entry. If a valid number is not entered you may perish.\nEnter a number for the Power-Swing skill.")));
 
 };
 
-
+//Console.log the total user attack as a warrior.
     console.log(userName + " has done " + userWarriorAttackTotal + " damage.");
 
-    var warriorSuccessOrFailureFirstTrial = zombieDefeatSuccessFunction(userWarriorAttackTotal,zombieArmyTotalHealth);
+//Create a variable to hold the warriors success
+    var warriorSuccessOrFailureTrial = zombieDefeatSuccessFunction(userWarriorAttackTotal,zombieArmyTotalHealth);
 
-    if(warriorSuccessOrFailureFirstTrial <= 0){
+//Create a message for both success of user and failure.
+    if(warriorSuccessOrFailureTrial <= 0){
         alert("Well done " + userName + "! As a brave " + userClass + " You have successfully defeated the zombie horde by inflicting" + userWarriorAttackTotal + " DAMAGE! You have survived the Cave of Trials and have won the favor of the Gods.")
-    }else{alert(userName + " You have fought bravely as a " + userClass + "! Alas, bravery alone cannot satisfy the hunger of the horde. You have become a delicious meal for these ravenous monsters.")}
+    }else{alert(userName + " You have fought bravely as a " + userClass + " and have done " + userWarriorAttackTotal + " Damage! Alas, bravery alone cannot satisfy the hunger of the horde. You have become a delicious meal for these ravenous monsters.")}
 
-    console.log("The zombies health after taking damage is " + warriorSuccessOrFailureFirstTrial + ".");
+//console.log the remaining zombie health.
+    console.log("The zombies health after taking damage is " + warriorSuccessOrFailureTrial + ".");
 };
 
+//Create a conditional for users who become peasants
+if(userClass == "Peasant" || userClass == "peasant"){
+
+//Create an alert to inform user of attacks at their disposal.
+    alert("The horde of zombies has begun attacking you! As a peasant you have three attacks at your disposal!\nPotato Toss\nWooden Spoon Strike, and\nShin kick.");
+
+//Create prompts within the Peasant function that allows the user to use the skills as many times as they want to.
+var userPeasantAttackTotal = peasantAttackDamageCalculations(Number(prompt("How man times will you throw potatoes at your enemy?\nEnter only a number.?")),Number(prompt("How many times will you use strike your enemies with a wooden spoon?\nEnter only a number.")),Number(prompt("How many times will you kick your enemies in the shins?\nEnter only a number.")));
+
+
+
+//Create a validity test for the users prompts.
+    while(isNaN(userPeasantAttackTotal) || userPeasantAttackTotal <= 0){
+        var userPeasantAttackTotal = peasantAttackDamageCalculations(Number(prompt("You have entered an invalid entry. If a valid number is not entered you may perish.\nEnter only a number for the potato toss skill.?")),Number(prompt("You have entered an invalid entry. If a valid number is not entered you may perish.\nEnter only a number for the wooden spoon strike skill.")),Number(prompt("You have entered an invalid entry. If a valid number is not entered you may perish.\nEnter only a number for the shin kick skill.")));
+    };
+
+//console.log userPeasantAttackTotal.
+    console.log(userPeasantAttackTotal + " Total Peasant Attack" );
+
+//Create a variable to hold the peasants success.
+    var peasantSuccessOrFailureTrial = zombieDefeatSuccessFunction(userPeasantAttackTotal,zombieArmyTotalHealth);
+
+//Create a message for both success of user and failure.
+    if(peasantSuccessOrFailureTrial <= 0){
+        alert("Well done " + userName + "! As a brave " + userClass + " You have successfully defeated the zombie horde by inflicting" + userPeasantAttackTotal + " DAMAGE! You have survived the Cave of Trials and have won the favor of the Gods.")
+    }else{alert(userName + " You have fought bravely as a " + userClass + " and have done" + userPeasantAttackTotal + " Damage! Alas, bravery alone cannot satisfy the hunger of the horde. You have become a delicious meal for these ravenous monsters.")}
+
+//console.log the remaining zombie health.
+    console.log("The zombies health after taking damage is " + warriorSuccessOrFailureTrial + ".");
+};
 
 
 
