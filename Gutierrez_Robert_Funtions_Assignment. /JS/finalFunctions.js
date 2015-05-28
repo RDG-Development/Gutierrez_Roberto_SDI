@@ -60,3 +60,28 @@ alert(userName + ", you are a " + userClass + ". You will now enter the Cave of 
 //Alert the user of the first trial.
 alert("You pass through a narrow cavern and emerge into a strange room? There are grave head stones all around, with an ominous fog creeping around you. Suddenly a hand sprouts out of the ground and grips your ankle. Startled you jump back to free yourself. 100 rotted corpses emerge from the ground. With hunger driving them, they slowly begin to surround you.\nPREPARE TO DEFEND YOURSELF.");
 
+//Create attack arrays for each class.
+
+//warriorAttackDamage[0]"Impale" = 50 Damage, warriorAttackDamage[1]"Slash] = 25 Damage, warriorAttackDamage[2]"Power-Swing = 100 damage
+var warriorAttackDamageArray = [50,25,100];
+
+//mageAttackArray[0]"Firebolt" = 60, mageAttackArray[1]"Frostbolt" = 40, mageAttackArray[2]"Ligtningbolt = 80
+var mageAttackDamageArray = [60,40,80];
+
+//rangerAttackArray[0]"FocusedShot" = 55, rangerAttackArray[1]"Explosive Bolt" = 85, rangerAttackArray[2]"Dual-Weild Slash" = 40
+var rangerAttackDamageArray = [55,85,40];
+
+
+//Create a Damage Calculations for a warrior function
+var warriorAttackDamageCalculations = function(q,w,r){
+    var attackTotal = (q*warriorAttackDamageArray[0]) + (w*warriorAttackDamageArray[1]) + (r*warriorAttackDamageArray[2]);
+    return attackTotal;
+    console.log(attackTotal + " Total Warrior damage.");
+};
+
+//Create a Damage Calculation function for a mage function
+var mageAttackDamageCalculations = function(q,w,r){
+    var attackTotal = (q*mageAttackDamageArray[0]) + (w*mageAttackDamageArray[1]) + (r*mageAttackDamageArray[2]);
+    return attackTotal;
+    console.log(attackTotal + " Total Mage damage.");
+};
