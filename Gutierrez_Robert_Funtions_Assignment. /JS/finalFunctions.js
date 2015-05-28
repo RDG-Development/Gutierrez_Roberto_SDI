@@ -104,6 +104,24 @@ var peasantAttackDamageCalculations = function(q,w,r){
     console.log(attackTotal + " Total Peasant damage.");
 };
 
+//Create Zombie Variables for the first Trial
+var zombieHealth = 25
+
+var zombiesTotal = 100
+
+var zombieArmyTotalHealth = zombieHealth * zombiesTotal
+
+console.log("The zombie horde has " + zombieArmyTotalHealth + " total health.")
+
+//Create a zombie defeat success function Where u will = user damage calculation, and z will = zombie army total health.
+var zombieDefeatSuccessFunction = function(u,z){
+
+    var zombieDefeat = z - u;
+    return zombieDefeat;
+};
+
+
+
 
 
 

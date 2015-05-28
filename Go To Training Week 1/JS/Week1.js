@@ -101,6 +101,7 @@ var mageAttackDamageCalculations = function(q,w,r){
     console.log(attackTotal + " Total Mage damage.");
 };
 
+
 var zombieHealth = 25
 
 var zombiesTotal = 100
