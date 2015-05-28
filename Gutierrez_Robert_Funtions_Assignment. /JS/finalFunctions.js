@@ -105,7 +105,7 @@ var peasantAttackDamageCalculations = function(q,w,r){
 };
 
 //Create Zombie Variables for the first Trial
-var zombieHealth = 25
+var zombieHealth = 40
 
 var zombiesTotal = 100
 
@@ -121,27 +121,32 @@ var zombieDefeatSuccessFunction = function(u,z){
 };
 
 
-
+//Create a conditional for users who choose warriors.
 if(userClass == "Warrior" || userClass == "warrior"){
 
+//Create an alert to inform user of attacks at their disposal.
     alert("The horde of zombies has begun attacking you! As a warrior you have three attacks at your disposal!\nImpale\nSlash and\nPower-Swing");
 
-    var userWarriorAttackTotal = warriorAttackDamageCalculations(Number(prompt("How many times will you Impale your enemies?\nEnter a number.")),Number(prompt("How many times will you slash your enemies?\nEnter a number")),Number(prompt("How many times will you use a Power-Swing on your enemies?\nEnter a number.")));
+//Create a prompts within the Warrior function that allows the user to use the skills as many times as they want to.
+    var userWarriorAttackTotal = warriorAttackDamageCalculations(Number(prompt("How many times will you use Impale on your enemies?\nEnter a number only")),Number(prompt("How many times will you use Slash on your enemies?\nEnter only a number")),Number(prompt("How many times will you use a Power-Swing on your enemies?\nEnter only a number.")));
+
+//Create a validity test for the users prompts.
+        if(isNaN(userWarriorAttackTotal) || userWarriorAttackTotal <= 0){
+            var userWarriorAttackTotal = warriorAttackDamageCalculations(Number(prompt("You have entered an invalid entry. If a valid number is not entered you may perish.\nEnter a number for the Impale skill")),Number(prompt("You have entered an invalid entry. If a valid number is not entered you may perish.\nEnter a number for the Slash skill")),Number(prompt("You have entered an invalid entry. If a valid number is not entered you may perish.\nEnter a number for the Power-Swing skill.")));
+
+};
+
 
     console.log(userName + " has done " + userWarriorAttackTotal + " damage.");
 
     var warriorSuccessOrFailureFirstTrial = zombieDefeatSuccessFunction(userWarriorAttackTotal,zombieArmyTotalHealth);
 
     if(warriorSuccessOrFailureFirstTrial <= 0){
-        alert("Well done " + userName + "! As a brave " + userClass + " You have successfully defeated the zombie horde! You must now continue through the Cave of Trials. Be on your guard.")
+        alert("Well done " + userName + "! As a brave " + userClass + " You have successfully defeated the zombie horde by inflicting" + userWarriorAttackTotal + " DAMAGE! You have survived the Cave of Trials and have won the favor of the Gods.")
     }else{alert(userName + " You have fought bravely as a " + userClass + "! Alas, bravery alone cannot satisfy the hunger of the horde. You have become a delicious meal for these ravenous monsters.")}
 
     console.log("The zombies health after taking damage is " + warriorSuccessOrFailureFirstTrial + ".");
-
-}
-
-
-
+};
 
 
 
