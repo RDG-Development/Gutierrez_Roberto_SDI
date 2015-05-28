@@ -181,7 +181,26 @@ if(userClass == "Mage" || userClass == "mage"){
 //console.log the remaining zombie health.
     console.log("The zombies health after taking damage is " + mageSuccessOrFailureTrial + ".");
 };
+//-----------------------------------------------------------------------------------------------------------------------
 
+//Create a conditional for users who become peasants
+if(userClass == "Ranger" || userClass == "ranger"){
+
+//Create an alert to inform user of attacks at their disposal.
+    alert("The horde of zombies has begun attacking you! As a Ranger you have three attacks at your disposal!\nFocused Shot\nExplosive Bolt, and\nDual-Weild Slash.");
+
+//Create prompts within the Ranger function that allows the user to use the skills as many times as they want to.
+    var userRangerAttackTotal = rangerAttackDamageCalculations(Number(prompt("How many times will you fire your Focused Shot?\nEnter only a number.")),Number(prompt("How many times will you fire an Explosive Bolt?\nEnter only a number")),Number(prompt("How many times will you use a Dual-Weild Slash?\nEnter only a number.")));
+
+//Create a validity test for the users prompts.
+    while(isNaN(userRangerAttackTotal) || userRangerAttackTotal <= 0){
+
+        //alert user why they have to reenter values.
+        alert("One or more of your entries was invalid please re-enter using only number.")
+        var userRangerAttackTotal = rangerAttackDamageCalculations(Number(prompt("How many times will you fire your Focused Shot?\nEnter only a number.")),Number(prompt("How many times will you fire an Explosive Bolt?\nEnter only a number")),Number(prompt("How many times will you use a Dual-Weild Slash?\nEnter only a number.")));
+    };
+
+}
 
 //-----------------------------------------------------------------------------------------------------------------------
 
