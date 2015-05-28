@@ -113,7 +113,7 @@ var zombieArmyTotalHealth = zombieHealth * zombiesTotal
 
 console.log("The zombie horde has " + zombieArmyTotalHealth + " total health.")
 
-//Create a zombie defeat success function Where u will = user damage calculation, and z will = zombie army total health.
+//Create a zombie defeat success function for trial 1 Where u will = user damage calculation, and z will = zombie army total health.
 var zombieDefeatSuccessFunction = function(u,z){
 
     var zombieDefeat = z - u;
@@ -122,6 +122,23 @@ var zombieDefeatSuccessFunction = function(u,z){
 
 
 
+if(userClass == "Warrior" || userClass == "warrior"){
+
+    alert("The horde of zombies has begun attacking you! As a warrior you have three attacks at your disposal!\nImpale\nSlash and\nPower-Swing");
+
+    var userWarriorAttackTotal = warriorAttackDamageCalculations(Number(prompt("How many times will you Impale your enemies?\nEnter a number.")),Number(prompt("How many times will you slash your enemies?\nEnter a number")),Number(prompt("How many times will you use a Power-Swing on your enemies?\nEnter a number.")));
+
+    console.log(userName + " has done " + userWarriorAttackTotal + " damage.");
+
+    var warriorSuccessOrFailureFirstTrial = zombieDefeatSuccessFunction(userWarriorAttackTotal,zombieArmyTotalHealth);
+
+    if(warriorSuccessOrFailureFirstTrial <= 0){
+        alert("Well done " + userName + "! As a brave " + userClass + " You have successfully defeated the zombie horde! You must now continue through the Cave of Trials. Be on your guard.")
+    }else{alert(userName + " You have fought bravely as a " + userClass + "! Alas, bravery alone cannot satisfy the hunger of the horde. You have become a delicious meal for these ravenous monsters.")}
+
+    console.log("The zombies health after taking damage is " + warriorSuccessOrFailureFirstTrial + ".");
+
+}
 
 
 

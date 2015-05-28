@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e651d914-f0a7-4169-a45f-467ef37938fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Go To Training Week 1/JS/Week1.js" afterPath="$PROJECT_DIR$/Go To Training Week 1/JS/Week1.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gutierrez_Robert_Funtions_Assignment. /JS/finalFunctions.js" afterPath="$PROJECT_DIR$/Gutierrez_Robert_Funtions_Assignment. /JS/finalFunctions.js" />
     </list>
     <ignored path="Gutierrez_Roberto_SDI.iws" />
@@ -37,8 +36,8 @@
       <file leaf-file-name="finalFunctions.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gutierrez_Robert_Funtions_Assignment. /JS/finalFunctions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7090909">
-              <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.036363635">
+              <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -50,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/Go To Training Week 1/JS/Week1.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="106" column="6" selection-start-line="104" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+              <caret line="124" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="139" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -554,15 +553,15 @@
     <entry file="file://$PROJECT_DIR$/Go To Training Week 1/JS/Week1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="106" column="6" selection-start-line="104" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <caret line="124" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="139" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gutierrez_Robert_Funtions_Assignment. /JS/finalFunctions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7090909">
-          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.036363635">
+          <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
