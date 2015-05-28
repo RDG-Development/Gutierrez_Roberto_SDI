@@ -31,7 +31,7 @@ if(userName == ""){
 
     };
 //console.log final username
-    console.log(userName);
+    console.log(userName + " Is the user name");
 };
 
 //Create a user prompt that stores the users Class.
@@ -54,7 +54,8 @@ if(userClass !== "Warrior" & userClass !== "Mage" & userClass !== "Ranger" & use
 };
 
 //console.log the final user class, and alert the user of their choice.
-console.log(userClass);
+console.log(userClass + " Is the users Class");
+
 alert(userName + ", you are a " + userClass + ". You will now enter the Cave of Trials.");
 
 //Alert the user of the first trial.
@@ -158,7 +159,28 @@ if(userClass == "Mage" || userClass == "mage"){
 //Create an alert to inform user of attacks at their disposal.
     alert("The horde of zombies has begun attacking you! As a Mage you have three attack spells at your disposal!\nFire Bolt\nFrost Bolt and\nLightning Bolt");
 
-}
+//Create prompts within the Mage function that allows the user to use the skills as many times as they want to.
+    var userMageAttackTotal = mageAttackDamageCalculations(Number(prompt("How many times will you cast your Fire Bolt Spell?\nEnter only a number.")),Number(prompt("How many times will you cast your Frost Bolt Spell?\nEnter only a number.")),Number(prompt("How many times will you cast your Lightning Bolt Spell?\nEnter only a number")));
+
+//Create a validity test for the users prompts
+    while(isNaN(userMageAttackTotal) || userMageAttackTotal <= 0){
+        var userMageAttackTotal = mageAttackDamageCalculations(Number(prompt("One of your first entries was invalid, try again. How many times will you cast your Fire Bolt Spell?\nEnter only a number.")),Number(prompt("One of your first entries was invalid, try again. How many times will you cast your Frost Bolt Spell?\nEnter only a number.")),Number(prompt("One of your first entries was invalid, try again. How many times will you cast your Lightning Bolt Spell?\nEnter only a number")));
+    };
+
+//console.log userMageAttackTotal
+    console.log(userMageAttackTotal + " Total Mage Attack.");
+
+//Create a variable that hold the Mages' success.
+    var mageSuccessOrFailureTrial = zombieDefeatSuccessFunction(userMageAttackTotal,zombieArmyTotalHealth);
+
+//Create a message for both success of user as mage or failure.
+    if(mageSuccessOrFailureTrial <= 0){
+        alert("Well done " + userName + "! As a brave " + userClass + " You have successfully defeated the zombie horde by inflicting" + userMageAttackTotal + " DAMAGE! You have survived the Cave of Trials and have won the favor of the Gods.")
+    }else{alert(userName + " You have fought bravely as a " + userClass + " and have done " + userMageAttackTotal + " Damage! Alas, bravery alone cannot satisfy the hunger of the horde! You have become a delicious meal for these ravenous monsters.")}
+
+//console.log the remaining zombie health.
+    console.log("The zombies health after taking damage is " + mageSuccessOrFailureTrial + ".");
+};
 
 
 //-----------------------------------------------------------------------------------------------------------------------
@@ -170,7 +192,7 @@ if(userClass == "Peasant" || userClass == "peasant"){
     alert("The horde of zombies has begun attacking you! As a peasant you have three attacks at your disposal!\nPotato Toss\nWooden Spoon Strike, and\nShin kick.");
 
 //Create prompts within the Peasant function that allows the user to use the skills as many times as they want to.
-var userPeasantAttackTotal = peasantAttackDamageCalculations(Number(prompt("How man times will you throw potatoes at your enemy?\nEnter only a number.?")),Number(prompt("How many times will you use strike your enemies with a wooden spoon?\nEnter only a number.")),Number(prompt("How many times will you kick your enemies in the shins?\nEnter only a number.")));
+    var userPeasantAttackTotal = peasantAttackDamageCalculations(Number(prompt("How man times will you throw potatoes at your enemy?\nEnter only a number.")),Number(prompt("How many times will you use strike your enemies with a wooden spoon?\nEnter only a number.")),Number(prompt("How many times will you kick your enemies in the shins?\nEnter only a number.")));
 
 
 //Create a validity test for the users prompts.
@@ -190,7 +212,7 @@ var userPeasantAttackTotal = peasantAttackDamageCalculations(Number(prompt("How 
     }else{alert(userName + " You have fought bravely as a " + userClass + " and have done " + userPeasantAttackTotal + " Damage! Alas, bravery alone cannot satisfy the hunger of the horde! You have become a delicious meal for these ravenous monsters.")}
 
 //console.log the remaining zombie health.
-    console.log("The zombies health after taking damage is " + warriorSuccessOrFailureTrial + ".");
+    console.log("The zombies health after taking damage is " + peasantSuccessOrFailureTrial + ".");
 };
 
 //-----------------------------------------------------------------------------------------------------------------------
