@@ -145,7 +145,7 @@ if(userClass == "Warrior" || userClass == "warrior"){
 
 //Create a message for both success of user and failure.
     if(warriorSuccessOrFailureTrial <= 0){
-        alert("Well done " + userName + "! As a brave " + userClass + " You have successfully defeated the zombie horde by inflicting" + userWarriorAttackTotal + " DAMAGE! You have survived the Cave of Trials and have won the favor of the Gods.")
+        alert("Well done " + userName + "! As a brave " + userClass + " You have successfully defeated the zombie horde by inflicting " + userWarriorAttackTotal + " DAMAGE! You have survived the Cave of Trials and have won the favor of the Gods.")
     }else{alert(userName + " You have fought bravely as a " + userClass + " and have done " + userWarriorAttackTotal + " Damage! Alas, bravery alone cannot satisfy the hunger of the horde. You have become a delicious meal for these ravenous monsters.")}
 
 //console.log the remaining zombie health.
@@ -175,7 +175,7 @@ if(userClass == "Mage" || userClass == "mage"){
 
 //Create a message for both success of user as mage or failure.
     if(mageSuccessOrFailureTrial <= 0){
-        alert("Well done " + userName + "! As a brave " + userClass + " You have successfully defeated the zombie horde by inflicting" + userMageAttackTotal + " DAMAGE! You have survived the Cave of Trials and have won the favor of the Gods.")
+        alert("Well done " + userName + "! As a brave " + userClass + " You have successfully defeated the zombie horde by inflicting " + userMageAttackTotal + " DAMAGE! You have survived the Cave of Trials and have won the favor of the Gods.")
     }else{alert(userName + " You have fought bravely as a " + userClass + " and have done " + userMageAttackTotal + " Damage! Alas, bravery alone cannot satisfy the hunger of the horde! You have become a delicious meal for these ravenous monsters.")}
 
 //console.log the remaining zombie health.
@@ -196,11 +196,26 @@ if(userClass == "Ranger" || userClass == "ranger"){
     while(isNaN(userRangerAttackTotal) || userRangerAttackTotal <= 0){
 
         //alert user why they have to reenter values.
-        alert("One or more of your entries was invalid please re-enter using only number.")
+        alert("One or more of your entries was invalid please re-enter using only numbers.")
         var userRangerAttackTotal = rangerAttackDamageCalculations(Number(prompt("How many times will you fire your Focused Shot?\nEnter only a number.")),Number(prompt("How many times will you fire an Explosive Bolt?\nEnter only a number")),Number(prompt("How many times will you use a Dual-Weild Slash?\nEnter only a number.")));
     };
 
-}
+//console.log userRangerAttackTotal variable.
+    console.log(userRangerAttackTotal + " Is Total Ranger Damage.");
+
+//Create a variable to hold the rangers success or failure.
+    var rangerSuccessOrFailureTrial = zombieDefeatSuccessFunction(userRangerAttackTotal,zombieArmyTotalHealth);
+
+//Create a message for both success of user and failure.
+    if(rangerSuccessOrFailureTrial <= 0){
+        alert("Well done " + userName + "! As a brave " + userClass + " You have successfully defeated the zombie horde by inflicting " + userRangerAttackTotal + " DAMAGE! You have survived the Cave of Trials and have won the favor of the Gods.")
+    }else{alert(userName + " You have fought bravely as a " + userClass + " and have done " + userRangerAttackTotal + " Damage! Alas, bravery alone cannot satisfy the hunger of the horde! You have become a delicious meal for these ravenous monsters.")}
+
+//console.log the remaining zombie health.
+    console.log("The zombies health after taking damage is " + rangerSuccessOrFailureTrial + ".");
+
+
+};
 
 //-----------------------------------------------------------------------------------------------------------------------
 
@@ -227,7 +242,7 @@ if(userClass == "Peasant" || userClass == "peasant"){
 
 //Create a message for both success of user and failure.
     if(peasantSuccessOrFailureTrial <= 0){
-        alert("Well done " + userName + "! As a brave " + userClass + " You have successfully defeated the zombie horde by inflicting" + userPeasantAttackTotal + " DAMAGE! You have survived the Cave of Trials and have won the favor of the Gods.")
+        alert("Well done " + userName + "! As a brave " + userClass + " You have successfully defeated the zombie horde by inflicting " + userPeasantAttackTotal + " DAMAGE! You have survived the Cave of Trials and have won the favor of the Gods.")
     }else{alert(userName + " You have fought bravely as a " + userClass + " and have done " + userPeasantAttackTotal + " Damage! Alas, bravery alone cannot satisfy the hunger of the horde! You have become a delicious meal for these ravenous monsters.")}
 
 //console.log the remaining zombie health.
