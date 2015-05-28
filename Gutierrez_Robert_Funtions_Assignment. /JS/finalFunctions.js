@@ -71,6 +71,9 @@ var mageAttackDamageArray = [60,40,80];
 //rangerAttackArray[0]"FocusedShot" = 55, rangerAttackArray[1]"Explosive Bolt" = 85, rangerAttackArray[2]"Dual-Weild Slash" = 40
 var rangerAttackDamageArray = [55,85,40];
 
+//peasantAttackArray{0}"Throw Potato" = 1, peasantAttackArray[1]"Wooden Spoon Strike" = 1,peasantAttackArray[2]"Shin Kick" = 2
+var peasantAttackDamageArray = [1,1,2];
+
 
 //Create a Damage Calculations for a warrior function
 var warriorAttackDamageCalculations = function(q,w,r){
@@ -85,3 +88,28 @@ var mageAttackDamageCalculations = function(q,w,r){
     return attackTotal;
     console.log(attackTotal + " Total Mage damage.");
 };
+
+//Create a Damage Calculation function for a ranger function
+var rangerAttackDamageCalculations = function(q,w,r){
+    var attackTotal = (q*rangerAttackDamageArray[0]) + (w*rangerAttackDamageArray[1]) + (r*rangerAttackDamageArray[2]);
+    return attackTotal
+    console.log(attackTotal + " Total Ranger damage.");
+
+};
+
+//Create a Damage Calculation function for a peasant function
+var peasantAttackDamageCalculations = function(q,w,r){
+    var attackTotal = (q*peasantAttackDamageArray[0]) + (w*peasantAttackDamageArray[1]) + (r*peasantAttackDamageArray[2]);
+    return attackTotal
+    console.log(attackTotal + " Total Peasant damage.");
+};
+
+
+
+
+
+
+
+
+
+
