@@ -150,6 +150,18 @@ if(userClass == "Warrior" || userClass == "warrior"){
 //console.log the remaining zombie health.
     console.log("The zombies health after taking damage is " + warriorSuccessOrFailureTrial + ".");
 };
+//-----------------------------------------------------------------------------------------------------------------------
+
+//Create a conditional for users who become a Mage.
+if(userClass == "Mage" || userClass == "mage"){
+
+//Create an alert to inform user of attacks at their disposal.
+    alert("The horde of zombies has begun attacking you! As a Mage you have three attack spells at your disposal!\nFire Bolt\nFrost Bolt and\nLightning Bolt");
+
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------------
 
 //Create a conditional for users who become peasants
 if(userClass == "Peasant" || userClass == "peasant"){
@@ -159,7 +171,6 @@ if(userClass == "Peasant" || userClass == "peasant"){
 
 //Create prompts within the Peasant function that allows the user to use the skills as many times as they want to.
 var userPeasantAttackTotal = peasantAttackDamageCalculations(Number(prompt("How man times will you throw potatoes at your enemy?\nEnter only a number.?")),Number(prompt("How many times will you use strike your enemies with a wooden spoon?\nEnter only a number.")),Number(prompt("How many times will you kick your enemies in the shins?\nEnter only a number.")));
-
 
 
 //Create a validity test for the users prompts.
@@ -176,12 +187,13 @@ var userPeasantAttackTotal = peasantAttackDamageCalculations(Number(prompt("How 
 //Create a message for both success of user and failure.
     if(peasantSuccessOrFailureTrial <= 0){
         alert("Well done " + userName + "! As a brave " + userClass + " You have successfully defeated the zombie horde by inflicting" + userPeasantAttackTotal + " DAMAGE! You have survived the Cave of Trials and have won the favor of the Gods.")
-    }else{alert(userName + " You have fought bravely as a " + userClass + " and have done" + userPeasantAttackTotal + " Damage! Alas, bravery alone cannot satisfy the hunger of the horde. You have become a delicious meal for these ravenous monsters.")}
+    }else{alert(userName + " You have fought bravely as a " + userClass + " and have done " + userPeasantAttackTotal + " Damage! Alas, bravery alone cannot satisfy the hunger of the horde! You have become a delicious meal for these ravenous monsters.")}
 
 //console.log the remaining zombie health.
     console.log("The zombies health after taking damage is " + warriorSuccessOrFailureTrial + ".");
 };
 
+//-----------------------------------------------------------------------------------------------------------------------
 
 
 
