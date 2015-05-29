@@ -8,7 +8,7 @@ SDI
 
 // Create an alert to test the connection.
 
-alert("Testing Connection!!! Are we ready?");
+//alert("Testing Connection!!! Are we ready?");
 
 //create  a gaming scenario where multiple functions are used to calculate results.
 
@@ -183,7 +183,7 @@ if(userClass == "Mage" || userClass == "mage"){
 };
 //-----------------------------------------------------------------------------------------------------------------------
 
-//Create a conditional for users who become peasants
+//Create a conditional for users who become Rangers.
 if(userClass == "Ranger" || userClass == "ranger"){
 
 //Create an alert to inform user of attacks at their disposal.
@@ -251,6 +251,18 @@ if(userClass == "Peasant" || userClass == "peasant"){
 
 //-----------------------------------------------------------------------------------------------------------------------
 
+alert("Thanks for trying out my code. I hope you liked it. Feel free to refresh the page and try other outcomes.")
 
+/*
+My test values are as follows.
+I chose not to enter my name so I was labeled Hunter.
+I chose to be a Ranger.
+I chose to fire 25 Focused shots, 25 Explosive shots, and 25 dual-wield slashes.
+The end result was 4500 damage which was enough to defeat the zombies who only had 4000 health total.
+A alert appears and informs me of my success.
+End of code.
+
+Thank you for trying out my code.
+ */
 
 
